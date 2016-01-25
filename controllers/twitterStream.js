@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 
 var fs = require("fs");
 var path = require("path");
@@ -13,7 +13,7 @@ function makeKeywordMap(keywords) {
     keyword = keyword.toLowerCase();
     map[keyword] = true;
   }
-  return map;  
+  return map;
 };
 
 // Returns an Observable from a node stream.
@@ -78,10 +78,7 @@ exports.handle = function(stream, callback) {
     .filter(isParsable)
     .groupBy(isCached)
     .flatMap(group => {
-      if (group.key === true) {
-        return handleCachedTweets(group);
-      } else if (group.key === false) {
-        return handleTweets(group);
-      }
+      if (group.key === true) return handleCachedTweets(group);
+      else if (group.key === false) return handleTweets(group);
     });
 };

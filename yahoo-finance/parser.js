@@ -20,7 +20,6 @@ function StreamParser() {
 };
 
 StreamParser.prototype = Object.create(EventEmitter.prototype);
-
 StreamParser.END = "{}</script>";
 StreamParser.ENDLENGTH = 12;
 

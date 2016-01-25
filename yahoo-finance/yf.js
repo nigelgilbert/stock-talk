@@ -4,7 +4,7 @@ var http = require("http");
 var StreamParser = require("./parser");
 var querydict = require("./querydict");
 
-function _makePath(symbol, querycode) {
+function makePath(symbol, querycode) {
   if (!(querycode in querydict))
     throw new Error("Invalid querycode '" + querycode + "'");
 
@@ -17,9 +17,9 @@ function _makePath(symbol, querycode) {
   return streamURL;
 };
 
-function _makeFinanceStream(symbol, querycode) {
+function makeFinanceStream(symbol, querycode) {
   let stream = new StreamParser();
-  let path = _makePath(symbol, querycode);
+  let path = makePath(symbol, querycode);
   let options = {
     hostname: "streamerapi.finance.yahoo.com",
     path: path,
@@ -37,6 +37,6 @@ function _makeFinanceStream(symbol, querycode) {
 };
 
 module.exports.stream = function(symbol, querycode, callback) {
-  let stream = _makeFinanceStream(symbol, querycode);
+  let stream = makeFinanceStream(symbol, querycode);
   callback(stream);
 };
