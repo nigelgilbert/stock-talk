@@ -52,13 +52,13 @@ socket.on("connection", (client) => {
 
 var twitter = require("twitter");
 var config = require("./config");
-var handleTwitterStream = require("./utils/handleTwitterStream");
+var twitterStreamController = require("./utils/twitterStreamController");
 
 var twit = new twitter(config.twitter);
 
 twit.stream("statuses/filter", { track: "justin" }, (stream) => {
-  let observable = handleTwitterStream(stream);
-  // observable.subscribe(tweet => console.log(tweet.text));
+  let output = twitterStreamController.handle(stream);
+  output.subscribe(() => console.log("tweet"));
 });
 
 
