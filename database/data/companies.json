@@ -1,0 +1,3519 @@
+{
+  "companies" : [
+    {
+      "symbol"   : "TFSC",
+      "name"     : "1347 Capital Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "TFSCR",
+      "name"     : "1347 Capital Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "TFSCU",
+      "name"     : "1347 Capital Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "TFSCW",
+      "name"     : "1347 Capital Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "PIH",
+      "name"     : "1347 Property Insurance Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "FLWS",
+      "name"     : "1-800 FLOWERS.COM",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "FCTY",
+      "name"     : "1st Century Bancshares",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "FCCY",
+      "name"     : "1st Constitution Bancorp (NJ)",
+      "industry" : "Savings Institutions"
+    },
+    {
+      "symbol"   : "SRCE",
+      "name"     : "1st Source Corporation",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "VNET",
+      "name"     : "21Vianet Group",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "XXII",
+      "name"     : "22nd Century Group",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "TWOU",
+      "name"     : "2U",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "DDD",
+      "name"     : "3D Systems Corporation",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "MMM",
+      "name"     : "3M Company",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "WBAI",
+      "name"     : "500.com Limited",
+      "industry" : "Services-Misc. Amusement & Recreation"
+    },
+    {
+      "symbol"   : "JOBS",
+      "name"     : "51job",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "WUBA",
+      "name"     : "58.com Inc.",
+      "industry" : "Computer Software: Programming"
+    },
+    {
+      "symbol"   : "SIXD",
+      "name"     : "6D Global Technologies",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "CAFD",
+      "name"     : "8point3 Energy Partners LP",
+      "industry" : "Electric Utilities: Central"
+    },
+    {
+      "symbol"   : "EGHT",
+      "name"     : "8x8 Inc",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "AVHI",
+      "name"     : "A V Homes",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "SHLM",
+      "name"     : "A. Schulman",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AHC",
+      "name"     : "A.H. Belo Corporation",
+      "industry" : "Newspapers/Magazines"
+    },
+    {
+      "symbol"   : "ATEN",
+      "name"     : "A10 Networks",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AAC",
+      "name"     : "AAC Holdings",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AAON",
+      "name"     : "AAON",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AIR",
+      "name"     : "AAR Corp.",
+      "industry" : "Aerospace"
+    },
+    {
+      "symbol"   : "AAN",
+      "name"     : "Aaron&#39;s",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ABAX",
+      "name"     : "ABAXIS",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ABB",
+      "name"     : "ABB Ltd",
+      "industry" : "Electrical Products"
+    },
+    {
+      "symbol"   : "ABT",
+      "name"     : "Abbott Laboratories",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ABBV",
+      "name"     : "AbbVie Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ABY",
+      "name"     : "Abengoa Yield plc",
+      "industry" : "Electric Utilities: Central"
+    },
+    {
+      "symbol"   : "ABGB",
+      "name"     : "Abengoa",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ABEO",
+      "name"     : "Abeona Therapeutics Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ABEOW",
+      "name"     : "Abeona Therapeutics Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ANF",
+      "name"     : "Abercrombie & Fitch Company",
+      "industry" : "Clothing/Shoe/Accessory Stores"
+    },
+    {
+      "symbol"   : "FAX",
+      "name"     : "Aberdeen Asia-Pacific Income Fund Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "IAF",
+      "name"     : "Aberdeen Australia Equity Fund Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "CH",
+      "name"     : "Aberdeen Chile Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABE           ",
+      "name"     : "Aberdeen Emerging Markets Smaller Company Opportunities Fund I",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "FCO",
+      "name"     : "Aberdeen Global Income Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "GCH",
+      "name"     : "Aberdeen Greater China Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "IF",
+      "name"     : "Aberdeen Indonesia Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ISL",
+      "name"     : "Aberdeen Israel Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "JEQ",
+      "name"     : "Aberdeen Japan Equity Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "SGF",
+      "name"     : "Aberdeen Singapore Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABIL",
+      "name"     : "Ability Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ABILW",
+      "name"     : "Ability Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ABMD",
+      "name"     : "ABIOMED",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ABM",
+      "name"     : "ABM Industries Incorporated",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "AXAS",
+      "name"     : "Abraxas Petroleum Corporation",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "ACTG",
+      "name"     : "Acacia Research Corporation",
+      "industry" : "Multi-Sector Companies"
+    },
+    {
+      "symbol"   : "ACHC",
+      "name"     : "Acadia Healthcare Company",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACAD",
+      "name"     : "ACADIA Pharmaceuticals Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AKR",
+      "name"     : "Acadia Realty Trust",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ACST",
+      "name"     : "Acasti Pharma",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AXDX",
+      "name"     : "Accelerate Diagnostics",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "XLRN",
+      "name"     : "Acceleron Pharma Inc.",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "ACN",
+      "name"     : "Accenture plc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ANCX",
+      "name"     : "Access National Corporation",
+      "industry" : "Savings Institutions"
+    },
+    {
+      "symbol"   : "ACCO",
+      "name"     : "Acco Brands Corporation",
+      "industry" : "Publishing"
+    },
+    {
+      "symbol"   : "ARAY",
+      "name"     : "Accuray Incorporated",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "ACW",
+      "name"     : "Accuride Corporation New",
+      "industry" : "Auto Parts:O.E.M."
+    },
+    {
+      "symbol"   : "VXDN",
+      "name"     : "AccuShares Spot CBOE VIX Down Shares",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "VXUP",
+      "name"     : "AccuShares Spot CBOE VIX Up Shares",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACRX",
+      "name"     : "AcelRx Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACET",
+      "name"     : "Aceto Corporation",
+      "industry" : "Other Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AKAO",
+      "name"     : "Achaogen",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACHN",
+      "name"     : "Achillion Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACIW",
+      "name"     : "ACI Worldwide",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ACRS",
+      "name"     : "Aclaris Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACU",
+      "name"     : "Acme United Corporation.",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "ACNB",
+      "name"     : "ACNB Corporation",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ACOR",
+      "name"     : "Acorda Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ATV",
+      "name"     : "Acorn International",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AIII",
+      "name"     : "ACRE Realty Investors",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ATNM",
+      "name"     : "Actinium Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACTS",
+      "name"     : "Actions Semiconductor Co.",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ACPW",
+      "name"     : "Active Power",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "ATVI",
+      "name"     : "Activision Blizzard",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ACTA",
+      "name"     : "Actua Corporation",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "ATU",
+      "name"     : "Actuant Corporation",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "AYI",
+      "name"     : "Acuity Brands Inc",
+      "industry" : "Building Products"
+    },
+    {
+      "symbol"   : "ACUR",
+      "name"     : "Acura Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACXM",
+      "name"     : "Acxiom Corporation",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "ADMS",
+      "name"     : "Adamas Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ADMP",
+      "name"     : "Adamis Pharmaceuticals Corporation",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ADX",
+      "name"     : "Adams Diversified Equity Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "PEO",
+      "name"     : "Adams Natural Resources Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AE",
+      "name"     : "Adams Resources & Energy",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "ADAP",
+      "name"     : "Adaptimmune Therapeutics plc",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "ADK^A",
+      "name"     : "Adcare Health Systems Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ADK",
+      "name"     : "Adcare Health Systems Inc",
+      "industry" : "Hospital/Nursing Management"
+    },
+    {
+      "symbol"   : "ADK.PRA",
+      "name"     : "Adcare Health Systems Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ADUS",
+      "name"     : "Addus HomeCare Corporation",
+      "industry" : "Medical/Nursing Services"
+    },
+    {
+      "symbol"   : "AEY",
+      "name"     : "ADDvantage Technologies Group",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AGRO",
+      "name"     : "Adecoagro S.A.",
+      "industry" : "Farming/Seeds/Milling"
+    },
+    {
+      "symbol"   : "ADPT",
+      "name"     : "Adeptus Health Inc.",
+      "industry" : "Hospital/Nursing Management"
+    },
+    {
+      "symbol"   : "IOTS",
+      "name"     : "Adesto Technologies Corporation",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "ADMA",
+      "name"     : "ADMA Biologics Inc",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "ADBE",
+      "name"     : "Adobe Systems Incorporated",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "ADT",
+      "name"     : "ADT Corporation",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "ADTN",
+      "name"     : "ADTRAN",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "ADRO",
+      "name"     : "Aduro Biotech",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AAP",
+      "name"     : "Advance Auto Parts Inc",
+      "industry" : "Other Specialty Stores"
+    },
+    {
+      "symbol"   : "AAAP",
+      "name"     : "Advanced Accelerator Applications S.A.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "WMS",
+      "name"     : "Advanced Drainage Systems",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AEIS",
+      "name"     : "Advanced Energy Industries",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AMD",
+      "name"     : "Advanced Micro Devices",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ASX",
+      "name"     : "Advanced Semiconductor Engineering",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AAV",
+      "name"     : "Advantage Oil & Gas Ltd",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "ATE",
+      "name"     : "Advantest Corporation (Kabushiki Kaisha Advantest) ADS",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "ADXS",
+      "name"     : "Advaxis",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ADXSW",
+      "name"     : "Advaxis",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AVK",
+      "name"     : "Advent Claymore Convertible Securities and Income Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGC",
+      "name"     : "Advent Claymore Convertible Securities and Income Fund II",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "LCM",
+      "name"     : "Advent/Claymore Enhanced Growth & Income Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "MAUI",
+      "name"     : "AdvisorShares Market Adaptive Unconstrained Income ETF",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "YPRO",
+      "name"     : "AdvisorShares YieldPro ETF",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACM",
+      "name"     : "AECOM",
+      "industry" : "Military/Government/Technical"
+    },
+    {
+      "symbol"   : "ANW",
+      "name"     : "Aegean Marine Petroleum Network Inc.",
+      "industry" : "Oil Refining/Marketing"
+    },
+    {
+      "symbol"   : "AEGR",
+      "name"     : "Aegerion Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AEGN",
+      "name"     : "Aegion Corp",
+      "industry" : "Water Supply"
+    },
+    {
+      "symbol"   : "AEB",
+      "name"     : "Aegon NV",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AED",
+      "name"     : "Aegon NV",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AEG",
+      "name"     : "Aegon NV",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AEH",
+      "name"     : "Aegon NV",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AEK",
+      "name"     : "Aegon NV",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AEHR",
+      "name"     : "Aehr Test Systems",
+      "industry" : "Electrical Products"
+    },
+    {
+      "symbol"   : "AMTX",
+      "name"     : "Aemetis",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AEPI",
+      "name"     : "AEP Industries Inc.",
+      "industry" : "Specialty Chemicals"
+    },
+    {
+      "symbol"   : "AER",
+      "name"     : "Aercap Holdings N.V.",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "AERI",
+      "name"     : "Aerie Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ACY",
+      "name"     : "AeroCentury Corp.",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "HIVE",
+      "name"     : "Aerohive Networks",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AJRD",
+      "name"     : "Aerojet Rocketdyne Holdings",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ARO",
+      "name"     : "Aeropostale Inc",
+      "industry" : "Clothing/Shoe/Accessory Stores"
+    },
+    {
+      "symbol"   : "AVAV",
+      "name"     : "AeroVironment",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AEZS",
+      "name"     : "AEterna Zentaris Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AEMD",
+      "name"     : "Aethlon Medical",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AET",
+      "name"     : "Aetna Inc.",
+      "industry" : "Medical Specialities"
+    },
+    {
+      "symbol"   : "AMG",
+      "name"     : "Affiliated Managers Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "MGR",
+      "name"     : "Affiliated Managers Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFMD",
+      "name"     : "Affimed N.V.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AFFX",
+      "name"     : "Affymetrix",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AFL",
+      "name"     : "Aflac Incorporated",
+      "industry" : "Accident &Health Insurance"
+    },
+    {
+      "symbol"   : "AFSD",
+      "name"     : "Aflac Incorporated",
+      "industry" : "Accident &Health Insurance"
+    },
+    {
+      "symbol"   : "MITT",
+      "name"     : "AG Mortgage Investment Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "MITT^A",
+      "name"     : "AG Mortgage Investment Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "MITT^B",
+      "name"     : "AG Mortgage Investment Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "WGA",
+      "name"     : "AG&E Holdings",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AGCO",
+      "name"     : "AGCO Corporation",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "AGEN",
+      "name"     : "Agenus Inc.",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "AGRX",
+      "name"     : "Agile Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "A",
+      "name"     : "Agilent Technologies",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AGYS",
+      "name"     : "Agilysys",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AGIO",
+      "name"     : "Agios Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "GAS",
+      "name"     : "AGL Resources",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AEM",
+      "name"     : "Agnico Eagle Mines Limited",
+      "industry" : "Precious Metals"
+    },
+    {
+      "symbol"   : "ADC",
+      "name"     : "Agree Realty Corporation",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "GRO",
+      "name"     : "Agria Corporation",
+      "industry" : "Farming/Seeds/Milling"
+    },
+    {
+      "symbol"   : "AGU",
+      "name"     : "Agrium Inc.",
+      "industry" : "Agricultural Chemicals"
+    },
+    {
+      "symbol"   : "AGFS",
+      "name"     : "AgroFresh Solutions",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AGFSW",
+      "name"     : "AgroFresh Solutions",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AIMT",
+      "name"     : "Aimmune Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AIRI",
+      "name"     : "Air Industries Group",
+      "industry" : "Military/Government/Technical"
+    },
+    {
+      "symbol"   : "AL",
+      "name"     : "Air Lease Corporation",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "AIRM",
+      "name"     : "Air Methods Corporation",
+      "industry" : "Transportation Services"
+    },
+    {
+      "symbol"   : "APD",
+      "name"     : "Air Products and Chemicals",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AIRT",
+      "name"     : "Air T",
+      "industry" : "Transportation"
+    },
+    {
+      "symbol"   : "ATSG",
+      "name"     : "Air Transport Services Group",
+      "industry" : "Transportation"
+    },
+    {
+      "symbol"   : "AYR",
+      "name"     : "Aircastle Limited",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "ARG",
+      "name"     : "Airgas",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AMCN",
+      "name"     : "AirMedia Group Inc",
+      "industry" : "Advertising"
+    },
+    {
+      "symbol"   : "AIXG",
+      "name"     : "Aixtron SE",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "AKS",
+      "name"     : "AK Steel Holding Corporation",
+      "industry" : "Steel/Iron Ore"
+    },
+    {
+      "symbol"   : "AKAM",
+      "name"     : "Akamai Technologies",
+      "industry" : "Miscellaneous"
+    },
+    {
+      "symbol"   : "AKTX",
+      "name"     : "Akari Therapeutics Plc",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AKBA",
+      "name"     : "Akebia Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AKER",
+      "name"     : "Akers Biosciences Inc",
+      "industry" : "Biotechnology: In Vitro & In Vivo Diagnostic Substances"
+    },
+    {
+      "symbol"   : "AKRX",
+      "name"     : "Akorn",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALP.PRO",
+      "name"     : "Alabama Power Company",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALP^O",
+      "name"     : "Alabama Power Company",
+      "industry" : "Electric Utilities: Central"
+    },
+    {
+      "symbol"   : "ALG",
+      "name"     : "Alamo Group",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AGI",
+      "name"     : "Alamos Gold Inc.",
+      "industry" : "Precious Metals"
+    },
+    {
+      "symbol"   : "ALRM",
+      "name"     : "Alarm.com Holdings",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ALK",
+      "name"     : "Alaska Air Group",
+      "industry" : "Transportation"
+    },
+    {
+      "symbol"   : "ALSK",
+      "name"     : "Alaska Communications Systems Group",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AIN",
+      "name"     : "Albany International Corporation",
+      "industry" : "Textiles"
+    },
+    {
+      "symbol"   : "AMRI",
+      "name"     : "Albany Molecular Research",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALB",
+      "name"     : "Albemarle Corporation",
+      "industry" : "Major Chemicals"
+    },
+    {
+      "symbol"   : "ALU",
+      "name"     : "Alcatel Lucent",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "ABDC",
+      "name"     : "Alcentra Capital Corp.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AA.PRB",
+      "name"     : "Alcoa Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AA",
+      "name"     : "Alcoa Inc.",
+      "industry" : "Metal Fabrications"
+    },
+    {
+      "symbol"   : "AA^",
+      "name"     : "Alcoa Inc.",
+      "industry" : "Metal Fabrications"
+    },
+    {
+      "symbol"   : "AA^B",
+      "name"     : "Alcoa Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ADHD",
+      "name"     : "Alcobra Ltd.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ALDR",
+      "name"     : "Alder BioPharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALDX",
+      "name"     : "Aldeyra Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALR.PRB",
+      "name"     : "Alere Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALR",
+      "name"     : "Alere Inc.",
+      "industry" : "Biotechnology: In Vitro & In Vivo Diagnostic Substances"
+    },
+    {
+      "symbol"   : "ALR^B",
+      "name"     : "Alere Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALEX",
+      "name"     : "Alexander & Baldwin Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ALX",
+      "name"     : "Alexander&#39;s",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARE.PRD",
+      "name"     : "Alexandria Real Estate Equities",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARE.PRE",
+      "name"     : "Alexandria Real Estate Equities",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARE",
+      "name"     : "Alexandria Real Estate Equities",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARE^D",
+      "name"     : "Alexandria Real Estate Equities",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARE^E",
+      "name"     : "Alexandria Real Estate Equities",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AXU",
+      "name"     : "Alexco Resource Corp",
+      "industry" : "Precious Metals"
+    },
+    {
+      "symbol"   : "ALXN",
+      "name"     : "Alexion Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALXA",
+      "name"     : "Alexza Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "BABA",
+      "name"     : "Alibaba Group Holding Limited",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ALCO",
+      "name"     : "Alico",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "ALGN",
+      "name"     : "Align Technology",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALIM",
+      "name"     : "Alimera Sciences",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALKS",
+      "name"     : "Alkermes plc",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "Y",
+      "name"     : "Alleghany Corporation",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "ATI",
+      "name"     : "Allegheny Technologies Incorporated",
+      "industry" : "Steel/Iron Ore"
+    },
+    {
+      "symbol"   : "ABTX",
+      "name"     : "Allegiance Bancshares",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ALGT",
+      "name"     : "Allegiant Travel Company",
+      "industry" : "Air Freight/Delivery Services"
+    },
+    {
+      "symbol"   : "ALLE",
+      "name"     : "Allegion plc",
+      "industry" : "Diversified Commercial Services"
+    },
+    {
+      "symbol"   : "AGN.PRA",
+      "name"     : "Allergan plc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGN",
+      "name"     : "Allergan plc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AGN^A",
+      "name"     : "Allergan plc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALE",
+      "name"     : "Allete",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AKP",
+      "name"     : "Alliance California Municipal Income Fund Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ADS",
+      "name"     : "Alliance Data Systems Corporation",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "AFOP",
+      "name"     : "Alliance Fiber Optic Products",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AIQ",
+      "name"     : "Alliance HealthCare Services",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AHGP",
+      "name"     : "Alliance Holdings GP",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "AFB",
+      "name"     : "Alliance National Municipal Income Fund Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AOI",
+      "name"     : "Alliance One International",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARLP",
+      "name"     : "Alliance Resource Partners",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "AWF",
+      "name"     : "Alliance World Dollar Government Fund II",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AB",
+      "name"     : "AllianceBernstein Holding L.P.",
+      "industry" : "Investment Managers"
+    },
+    {
+      "symbol"   : "ACG",
+      "name"     : "ALLIANCEBERNSTEIN INCOME FUND INC",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "LNT",
+      "name"     : "Alliant Energy Corporation",
+      "industry" : "Power Generation"
+    },
+    {
+      "symbol"   : "NCV",
+      "name"     : "AllianzGI Convertible & Income Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NCZ",
+      "name"     : "AllianzGI Convertible & Income Fund II",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACV",
+      "name"     : "AllianzGI Diversified Income & Convertible Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NIE",
+      "name"     : "AllianzGI Equity & Convertible Income Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NFJ",
+      "name"     : "AllianzGI NFJ Dividend",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AHPI",
+      "name"     : "Allied Healthcare Products",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AMOT",
+      "name"     : "Allied Motion Technologies",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AWH",
+      "name"     : "Allied World Assurance Company Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ALQA",
+      "name"     : "Alliqua BioMedical",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ALSN",
+      "name"     : "Allison Transmission Holdings",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ALLT",
+      "name"     : "Allot Communications Ltd.",
+      "industry" : "Computer Communications Equipment"
+    },
+    {
+      "symbol"   : "MDRX",
+      "name"     : "Allscripts Healthcare Solutions",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ALL.PRA",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL.PRB",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL.PRC",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL.PRD",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL.PRE",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL.PRF",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "ALL^A",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL^B",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL^C",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL^D",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL^E",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALL^F",
+      "name"     : "Allstate Corporation (The)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALLY",
+      "name"     : "Ally Financial Inc.",
+      "industry" : "Finance: Consumer Services"
+    },
+    {
+      "symbol"   : "ALLY^A",
+      "name"     : "Ally Financial Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALLY^B",
+      "name"     : "Ally Financial Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AAU",
+      "name"     : "Almaden Minerals",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AFAM",
+      "name"     : "Almost Family Inc",
+      "industry" : "Medical/Nursing Services"
+    },
+    {
+      "symbol"   : "ALNY",
+      "name"     : "Alnylam Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "BSI",
+      "name"     : "Alon Blue Square Israel Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALJ",
+      "name"     : "Alon USA Energy",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "ALDW",
+      "name"     : "Alon USA Partners",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "AOSL",
+      "name"     : "Alpha and Omega Semiconductor Limited",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "APT",
+      "name"     : "Alpha Pro Tech",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "GOOG",
+      "name"     : "Alphabet Inc.",
+      "industry" : "Computer Software: Programming"
+    },
+    {
+      "symbol"   : "GOOGL",
+      "name"     : "Alphabet Inc.",
+      "industry" : "Computer Software: Programming"
+    },
+    {
+      "symbol"   : "SMCP",
+      "name"     : "AlphaMark Actively Managed Small Cap ETF",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ATEC",
+      "name"     : "Alphatec Holdings",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AGD",
+      "name"     : "Alpine Global Dynamic Dividend Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AWP",
+      "name"     : "Alpine Global Premier Properties Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AOD",
+      "name"     : "Alpine Total Dynamic Dividend Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AAMC",
+      "name"     : "Altisource Asset Management Corp",
+      "industry" : "Real Estate"
+    },
+    {
+      "symbol"   : "ASPS",
+      "name"     : "Altisource Portfolio Solutions S.A.",
+      "industry" : "Other Consumer Services"
+    },
+    {
+      "symbol"   : "RESI",
+      "name"     : "Altisource Residential Corporation",
+      "industry" : "Real Estate"
+    },
+    {
+      "symbol"   : "AIMC",
+      "name"     : "Altra Industrial Motion Corp.",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "MO",
+      "name"     : "Altria Group",
+      "industry" : "Farming/Seeds/Milling"
+    },
+    {
+      "symbol"   : "ACH",
+      "name"     : "Aluminum Corporation of China Limited",
+      "industry" : "Aluminum"
+    },
+    {
+      "symbol"   : "AMAG",
+      "name"     : "AMAG Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AMRN",
+      "name"     : "Amarin Corporation PLC",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "AMRK",
+      "name"     : "A-Mark Precious Metals",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AYA",
+      "name"     : "Amaya Inc.",
+      "industry" : "Computer Software: Programming"
+    },
+    {
+      "symbol"   : "AMZN",
+      "name"     : "Amazon.com",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AMBC",
+      "name"     : "Ambac Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMBCW",
+      "name"     : "Ambac Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMBA",
+      "name"     : "Ambarella",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AMBR",
+      "name"     : "Amber Road",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ABEV",
+      "name"     : "Ambev S.A.",
+      "industry" : "Beverages (Production/Distribution)"
+    },
+    {
+      "symbol"   : "AMC",
+      "name"     : "AMC Entertainment Holdings",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AMCX",
+      "name"     : "AMC Networks Inc.",
+      "industry" : "Television Services"
+    },
+    {
+      "symbol"   : "DIT",
+      "name"     : "AMCON Distributing Company",
+      "industry" : "Food Distributors"
+    },
+    {
+      "symbol"   : "DOX",
+      "name"     : "Amdocs Limited",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "AMFW",
+      "name"     : "Amec Plc Ord",
+      "industry" : "Military/Government/Technical"
+    },
+    {
+      "symbol"   : "AMDA",
+      "name"     : "Amedica Corporation",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "AMED",
+      "name"     : "Amedisys Inc",
+      "industry" : "Medical/Nursing Services"
+    },
+    {
+      "symbol"   : "UHAL",
+      "name"     : "Amerco",
+      "industry" : "Rental/Leasing Companies"
+    },
+    {
+      "symbol"   : "AEE",
+      "name"     : "Ameren Corporation",
+      "industry" : "Power Generation"
+    },
+    {
+      "symbol"   : "AMRC",
+      "name"     : "Ameresco",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "ATAX",
+      "name"     : "America First Multifamily Investors",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMOV",
+      "name"     : "America Movil",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AMX",
+      "name"     : "America Movil",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AAL",
+      "name"     : "American Airlines Group",
+      "industry" : "Transportation"
+    },
+    {
+      "symbol"   : "AAT",
+      "name"     : "American Assets Trust",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AXL",
+      "name"     : "American Axle & Manufacturing Holdings",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ACC",
+      "name"     : "American Campus Communities Inc",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AGNC",
+      "name"     : "American Capital Agency Corp.",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AGNCB",
+      "name"     : "American Capital Agency Corp.",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AGNCP",
+      "name"     : "American Capital Agency Corp.",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "MTGE",
+      "name"     : "American Capital Mortgage Investment Corp.",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "MTGEP",
+      "name"     : "American Capital Mortgage Investment Corp.",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ACSF",
+      "name"     : "American Capital Senior Floating",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACAS",
+      "name"     : "American Capital",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "GNOW",
+      "name"     : "American Caresource Holdings Inc",
+      "industry" : "Hospital/Nursing Management"
+    },
+    {
+      "symbol"   : "ADGE",
+      "name"     : "American DG Energy Inc.",
+      "industry" : "Power Generation"
+    },
+    {
+      "symbol"   : "AEO",
+      "name"     : "American Eagle Outfitters",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AEP",
+      "name"     : "American Electric Power Company",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AETI",
+      "name"     : "American Electric Technologies",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "AEL",
+      "name"     : "American Equity Investment Life Holding Company",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AXP",
+      "name"     : "American Express Company",
+      "industry" : "Finance: Consumer Services"
+    },
+    {
+      "symbol"   : "AFCO",
+      "name"     : "American Farmland Company",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AFA",
+      "name"     : "American Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFG",
+      "name"     : "American Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFGE",
+      "name"     : "American Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFGH",
+      "name"     : "American Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFW",
+      "name"     : "American Financial Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMH.PRA",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMH.PRB",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMH.PRC",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMH",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AMH^A",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AMH^B",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMH^C",
+      "name"     : "American Homes 4 Rent",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMIC",
+      "name"     : "American Independence Corp.",
+      "industry" : "Accident &Health Insurance"
+    },
+    {
+      "symbol"   : "AIG",
+      "name"     : "American International Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AIG.WS",
+      "name"     : "American International Group",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ALN",
+      "name"     : "American Lorain Corporation",
+      "industry" : "Packaged Foods"
+    },
+    {
+      "symbol"   : "AMID",
+      "name"     : "American Midstream Partners",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AMNB",
+      "name"     : "American National Bankshares",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ANAT",
+      "name"     : "American National Insurance Company",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "APEI",
+      "name"     : "American Public Education",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARII",
+      "name"     : "American Railcar Industries",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ARL",
+      "name"     : "American Realty Investors",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ARPI",
+      "name"     : "American Residential Properties",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AMRB",
+      "name"     : "American River Bankshares",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ASEI",
+      "name"     : "American Science and Engineering",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AMS",
+      "name"     : "American Shared Hospital Services",
+      "industry" : "Medical Specialities"
+    },
+    {
+      "symbol"   : "AMSWA",
+      "name"     : "American Software",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AWR",
+      "name"     : "American States Water Company",
+      "industry" : "Water Supply"
+    },
+    {
+      "symbol"   : "AMSC",
+      "name"     : "American Superconductor Corporation",
+      "industry" : "Metal Fabrications"
+    },
+    {
+      "symbol"   : "AMT.PRA",
+      "name"     : "American Tower Corporation (REIT)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMT.PRB",
+      "name"     : "American Tower Corporation (REIT)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMT",
+      "name"     : "American Tower Corporation (REIT)",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AMT^A",
+      "name"     : "American Tower Corporation (REIT)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMT^B",
+      "name"     : "American Tower Corporation (REIT)",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AVD",
+      "name"     : "American Vanguard Corporation",
+      "industry" : "Agricultural Chemicals"
+    },
+    {
+      "symbol"   : "AWK",
+      "name"     : "American Water Works",
+      "industry" : "Water Supply"
+    },
+    {
+      "symbol"   : "AMWD",
+      "name"     : "American Woodmark Corporation",
+      "industry" : "Forest Products"
+    },
+    {
+      "symbol"   : "CRMT",
+      "name"     : "America&#39;s Car-Mart",
+      "industry" : "Consumer Durables"
+    },
+    {
+      "symbol"   : "APU",
+      "name"     : "AmeriGas Partners",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AMP",
+      "name"     : "AMERIPRISE FINANCIAL SERVICES",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ABCB",
+      "name"     : "Ameris Bancorp",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "AMSF",
+      "name"     : "AMERISAFE",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ASRV",
+      "name"     : "AmeriServ Financial Inc.",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ASRVP",
+      "name"     : "AmeriServ Financial Inc.",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ABC",
+      "name"     : "AmerisourceBergen Corporation (Holding Co)",
+      "industry" : "Other Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ATLO",
+      "name"     : "Ames National Corporation",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "AMGN",
+      "name"     : "Amgen Inc.",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "FOLD",
+      "name"     : "Amicus Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANFI",
+      "name"     : "Amira Nature Foods Ltd",
+      "industry" : "Packaged Foods"
+    },
+    {
+      "symbol"   : "AMKR",
+      "name"     : "Amkor Technology",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AHS",
+      "name"     : "AMN Healthcare Services Inc",
+      "industry" : "Professional Services"
+    },
+    {
+      "symbol"   : "AP",
+      "name"     : "Ampco-Pittsburgh Corporation",
+      "industry" : "Fluid Controls"
+    },
+    {
+      "symbol"   : "AMPH",
+      "name"     : "Amphastar Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "APH",
+      "name"     : "Amphenol Corporation",
+      "industry" : "Electrical Products"
+    },
+    {
+      "symbol"   : "AMPE",
+      "name"     : "Ampio Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "BETR",
+      "name"     : "Amplify Snack Brands",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "APHB",
+      "name"     : "AmpliPhi Biosciences Corporation",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "AXR",
+      "name"     : "AMREP Corporation",
+      "industry" : "Newspapers/Magazines"
+    },
+    {
+      "symbol"   : "AMSG",
+      "name"     : "Amsurg Corp.",
+      "industry" : "Medical/Nursing Services"
+    },
+    {
+      "symbol"   : "AMSGP",
+      "name"     : "Amsurg Corp.",
+      "industry" : "Medical/Nursing Services"
+    },
+    {
+      "symbol"   : "ASYS",
+      "name"     : "Amtech Systems",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AME",
+      "name"     : "AMTEK",
+      "industry" : "Consumer Durables"
+    },
+    {
+      "symbol"   : "AFSI",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFSI^A",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AFSI^B",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AFSI^C",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AFSI^D",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AFSS",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AFST",
+      "name"     : "AmTrust Financial Services",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMRS",
+      "name"     : "Amyris",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "ANAC",
+      "name"     : "Anacor Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AEUA",
+      "name"     : "Anadarko Petroleum Corporation",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "APC",
+      "name"     : "Anadarko Petroleum Corporation",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "ANAD",
+      "name"     : "ANADIGICS",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ADI",
+      "name"     : "Analog Devices",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ALOG",
+      "name"     : "Analogic Corporation",
+      "industry" : "Electrical Products"
+    },
+    {
+      "symbol"   : "AVXL",
+      "name"     : "Anavex Life Sciences Corp.",
+      "industry" : "Biotechnology: Commercial Physical & Biological Resarch"
+    },
+    {
+      "symbol"   : "ANCB",
+      "name"     : "Anchor Bancorp",
+      "industry" : "Banks"
+    },
+    {
+      "symbol"   : "ABCW",
+      "name"     : "Anchor BanCorp Wisconsin Inc.",
+      "industry" : "Banks"
+    },
+    {
+      "symbol"   : "ANDA",
+      "name"     : "Andina Acquisition Corp. II",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ANDAR",
+      "name"     : "Andina Acquisition Corp. II",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ANDAU",
+      "name"     : "Andina Acquisition Corp. II",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ANDAW",
+      "name"     : "Andina Acquisition Corp. II",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ANGI",
+      "name"     : "Angie&#39;s List",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ANGO",
+      "name"     : "AngioDynamics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AU",
+      "name"     : "AngloGold Ashanti Limited",
+      "industry" : "Precious Metals"
+    },
+    {
+      "symbol"   : "BUD",
+      "name"     : "Anheuser-Busch Inbev SA",
+      "industry" : "Beverages (Production/Distribution)"
+    },
+    {
+      "symbol"   : "ANIP",
+      "name"     : "ANI Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANIK",
+      "name"     : "Anika Therapeutics Inc.",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "AXE",
+      "name"     : "Anixter International Inc.",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "NLY.PRA",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NLY.PRC",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NLY.PRD",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NLY",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "NLY^A",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NLY^C",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "NLY^D",
+      "name"     : "Annaly Capital Management Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANSS",
+      "name"     : "ANSYS",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ATRS",
+      "name"     : "Antares Pharma",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AM",
+      "name"     : "Antero Midstream Partners LP",
+      "industry" : "Natural Gas Distribution"
+    },
+    {
+      "symbol"   : "AR",
+      "name"     : "Antero Resources Corporation",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "ANTM",
+      "name"     : "Anthem",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANTX",
+      "name"     : "Anthem",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANTH",
+      "name"     : "Anthera Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANH.PRA",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANH.PRB",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANH.PRC",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANH",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ANH^A",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANH^B",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ANH^C",
+      "name"     : "Anworth Mortgage Asset  Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AON",
+      "name"     : "Aon plc",
+      "industry" : "Specialty Insurers"
+    },
+    {
+      "symbol"   : "ABAC",
+      "name"     : "Aoxin Tianli Group",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "AXN",
+      "name"     : "Aoxing Pharmaceutical Company",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "APA",
+      "name"     : "Apache Corporation",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "AIV.PRA",
+      "name"     : "Apartment Investment and Management Company",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AIV.PRZ",
+      "name"     : "Apartment Investment and Management Company",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AIV",
+      "name"     : "Apartment Investment and Management Company",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AIV^A",
+      "name"     : "Apartment Investment and Management Company",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AIV^Z",
+      "name"     : "Apartment Investment and Management Company",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ZLIG",
+      "name"     : "Aperion Biologics",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ATNY",
+      "name"     : "API Technologies Corp.",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "APIC",
+      "name"     : "Apigee Corporation",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "APOG",
+      "name"     : "Apogee Enterprises",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ARI.PRA",
+      "name"     : "Apollo Commercial Real Estate Finance",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARI",
+      "name"     : "Apollo Commercial Real Estate Finance",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ARI^A",
+      "name"     : "Apollo Commercial Real Estate Finance",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "APOL",
+      "name"     : "Apollo Education Group",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "APO",
+      "name"     : "Apollo Global Management",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AIB",
+      "name"     : "Apollo Investment Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AINV",
+      "name"     : "Apollo Investment Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AIY",
+      "name"     : "Apollo Investment Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMEH",
+      "name"     : "Apollo Medical Holdings",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AMTG",
+      "name"     : "Apollo Residential Mortgage",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AMTG^A",
+      "name"     : "Apollo Residential Mortgage",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AFT",
+      "name"     : "Apollo Senior Floating Rate Fund Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AIF",
+      "name"     : "Apollo Tactical Income Fund Inc.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "APPF",
+      "name"     : "AppFolio",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "APLE",
+      "name"     : "Apple Hospitality REIT",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AAPL",
+      "name"     : "Apple Inc.",
+      "industry" : "Computer Manufacturing"
+    },
+    {
+      "symbol"   : "ARCI",
+      "name"     : "Appliance Recycling Centers of America",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "APDN",
+      "name"     : "Applied DNA Sciences Inc",
+      "industry" : "Other Consumer Services"
+    },
+    {
+      "symbol"   : "APDNW",
+      "name"     : "Applied DNA Sciences Inc",
+      "industry" : "Other Consumer Services"
+    },
+    {
+      "symbol"   : "AGTC",
+      "name"     : "Applied Genetic Technologies Corporation",
+      "industry" : "Biotechnology: Biological Products (No Diagnostic Substances)"
+    },
+    {
+      "symbol"   : "AIT",
+      "name"     : "Applied Industrial Technologies",
+      "industry" : "Consumer Durables"
+    },
+    {
+      "symbol"   : "AMAT",
+      "name"     : "Applied Materials",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AMCC",
+      "name"     : "Applied Micro Circuits Corporation",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "AAOI",
+      "name"     : "Applied Optoelectronics",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AREX",
+      "name"     : "Approach Resources Inc.",
+      "industry" : "Oil & Gas Production"
+    },
+    {
+      "symbol"   : "APRI",
+      "name"     : "Apricus Biosciences",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ATR",
+      "name"     : "AptarGroup",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "APTO",
+      "name"     : "Aptose Biosciences",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "WTR",
+      "name"     : "Aqua America",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AQMS",
+      "name"     : "Aqua Metals",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AQXP",
+      "name"     : "Aquinox Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AUMA",
+      "name"     : "AR Capital Acquisition Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "AUMAU",
+      "name"     : "AR Capital Acquisition Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "AUMAW",
+      "name"     : "AR Capital Acquisition Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ARDM",
+      "name"     : "Aradigm Corporation",
+      "industry" : "Biotechnology: Electromedical & Electrotherapeutic Apparatus"
+    },
+    {
+      "symbol"   : "ARMK",
+      "name"     : "Aramark",
+      "industry" : "Restaurants"
+    },
+    {
+      "symbol"   : "PETX",
+      "name"     : "Aratana Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ABR.PRA",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABR.PRB",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABR.PRC",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABR",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ABR^A",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABR^B",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABR^C",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ABRN",
+      "name"     : "Arbor Realty Trust",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ABUS",
+      "name"     : "Arbutus Biopharma Corporation",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ARC",
+      "name"     : "ARC Document Solutions",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARCW",
+      "name"     : "ARC Group Worldwide",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ARCX",
+      "name"     : "Arc Logistic Partners LP",
+      "industry" : "Oil Refining/Marketing"
+    },
+    {
+      "symbol"   : "ABIO",
+      "name"     : "ARCA biopharma",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "RKDA",
+      "name"     : "Arcadia Biosciences",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "ARCB",
+      "name"     : "ArcBest Corporation",
+      "industry" : "Trucking Freight/Courier Services"
+    },
+    {
+      "symbol"   : "MT",
+      "name"     : "ArcelorMittal",
+      "industry" : "Steel/Iron Ore"
+    },
+    {
+      "symbol"   : "ARH.PRC",
+      "name"     : "Arch Capital Group Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACGL",
+      "name"     : "Arch Capital Group Ltd.",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "ARH^C",
+      "name"     : "Arch Capital Group Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ADM",
+      "name"     : "Archer-Daniels-Midland Company",
+      "industry" : "Packaged Foods"
+    },
+    {
+      "symbol"   : "APLP",
+      "name"     : "Archrock Partners",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AROC",
+      "name"     : "Archrock",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ARCO",
+      "name"     : "Arcos Dorados Holdings Inc.",
+      "industry" : "Restaurants"
+    },
+    {
+      "symbol"   : "ACAT",
+      "name"     : "Arctic Cat Inc.",
+      "industry" : "Industrial Specialties"
+    },
+    {
+      "symbol"   : "ARDX",
+      "name"     : "Ardelyx",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ASC",
+      "name"     : "Ardmore Shipping Corporation",
+      "industry" : "Marine Transportation"
+    },
+    {
+      "symbol"   : "ARNA",
+      "name"     : "Arena Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AFC",
+      "name"     : "Ares Capital Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARCC",
+      "name"     : "Ares Capital Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARU",
+      "name"     : "Ares Capital Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ACRE",
+      "name"     : "Ares Commercial Real Estate Corporation",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "ARDC",
+      "name"     : "Ares Dynamic Credit Allocation Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARES",
+      "name"     : "Ares Management L.P.",
+      "industry" : "Investment Managers"
+    },
+    {
+      "symbol"   : "AGX",
+      "name"     : "Argan",
+      "industry" : "Basic Industries"
+    },
+    {
+      "symbol"   : "AGII",
+      "name"     : "Argo Group International Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AGIIL",
+      "name"     : "Argo Group International Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ARGS",
+      "name"     : "Argos Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ARIS",
+      "name"     : "ARI Network Services",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ARIA",
+      "name"     : "ARIAD Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ANET",
+      "name"     : "Arista Networks",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ARKR",
+      "name"     : "Ark Restaurants Corp.",
+      "industry" : "Restaurants"
+    },
+    {
+      "symbol"   : "AI",
+      "name"     : "Arlington Asset Investment Corp",
+      "industry" : "Finance/Investors Services"
+    },
+    {
+      "symbol"   : "AIC",
+      "name"     : "Arlington Asset Investment Corp",
+      "industry" : "Finance/Investors Services"
+    },
+    {
+      "symbol"   : "AIW",
+      "name"     : "Arlington Asset Investment Corp",
+      "industry" : "Finance/Investors Services"
+    },
+    {
+      "symbol"   : "ARMH",
+      "name"     : "ARM Holdings plc",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "AHH",
+      "name"     : "Armada Hoffler Properties",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AMCO",
+      "name"     : "Armco Metals Holdings",
+      "industry" : "Consumer Durables"
+    },
+    {
+      "symbol"   : "ARR.PRA",
+      "name"     : "ARMOUR Residential REIT",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARR.PRB",
+      "name"     : "ARMOUR Residential REIT",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARR",
+      "name"     : "ARMOUR Residential REIT",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ARR^A",
+      "name"     : "ARMOUR Residential REIT",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARR^B",
+      "name"     : "ARMOUR Residential REIT",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AWI",
+      "name"     : "Armstrong World Industries Inc",
+      "industry" : "Plastic Products"
+    },
+    {
+      "symbol"   : "ARTX",
+      "name"     : "Arotech Corporation",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "ARWA",
+      "name"     : "Arowana Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ARWAR",
+      "name"     : "Arowana Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ARWAU",
+      "name"     : "Arowana Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ARWAW",
+      "name"     : "Arowana Inc.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "ARQL",
+      "name"     : "ArQule",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ARRY",
+      "name"     : "Array BioPharma Inc.",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "HRT",
+      "name"     : "Arrhythmia Research Technology Inc.",
+      "industry" : "Biotechnology: Electromedical & Electrotherapeutic Apparatus"
+    },
+    {
+      "symbol"   : "ARRS",
+      "name"     : "ARRIS International plc",
+      "industry" : "Radio And Television Broadcasting And Communications Equipment"
+    },
+    {
+      "symbol"   : "DWAT",
+      "name"     : "Arrow DWA Tactical ETF",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARW",
+      "name"     : "Arrow Electronics",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "AROW",
+      "name"     : "Arrow Financial Corporation",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ARWR",
+      "name"     : "Arrowhead Research Corporation",
+      "industry" : "Biotechnology: Commercial Physical & Biological Resarch"
+    },
+    {
+      "symbol"   : "ARTNA",
+      "name"     : "Artesian Resources Corporation",
+      "industry" : "Water Supply"
+    },
+    {
+      "symbol"   : "AJG",
+      "name"     : "Arthur J. Gallagher & Co.",
+      "industry" : "Specialty Insurers"
+    },
+    {
+      "symbol"   : "APAM",
+      "name"     : "Artisan Partners Asset Management Inc.",
+      "industry" : "Investment Managers"
+    },
+    {
+      "symbol"   : "ARTW",
+      "name"     : "Art&#39;s-Way Manufacturing Co.",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ASA",
+      "name"     : "ASA Gold and Precious Metals Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AKG",
+      "name"     : "Asanko Gold Inc.",
+      "industry" : "Mining & Quarrying of Nonmetallic Minerals (No Fuels)"
+    },
+    {
+      "symbol"   : "PUMP",
+      "name"     : "Asante Solutions",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASBB",
+      "name"     : "ASB Bancorp",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ABG",
+      "name"     : "Asbury Automotive Group Inc",
+      "industry" : "Automotive Aftermarket"
+    },
+    {
+      "symbol"   : "ASNA",
+      "name"     : "Ascena Retail Group",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ASND",
+      "name"     : "Ascendis Pharma A/S",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ASCMA",
+      "name"     : "Ascent Capital Group",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "ASTI",
+      "name"     : "Ascent Solar Technologies",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AHP",
+      "name"     : "Ashford Hospitality Prime",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AHT.PRA",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHT.PRD",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHT.PRE",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHT",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "Real Estate Investment Trusts"
+    },
+    {
+      "symbol"   : "AHT^A",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHT^D",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHT^E",
+      "name"     : "Ashford Hospitality Trust Inc",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AINC",
+      "name"     : "Ashford Inc.",
+      "industry" : "Professional Services"
+    },
+    {
+      "symbol"   : "ASH",
+      "name"     : "Ashland Inc.",
+      "industry" : "Specialty Chemicals"
+    },
+    {
+      "symbol"   : "APB",
+      "name"     : "Asia Pacific Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "APWC",
+      "name"     : "Asia Pacific Wire & Cable Corporation Limited",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "GRR",
+      "name"     : "Asia Tigers Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASML",
+      "name"     : "ASML Holding N.V.",
+      "industry" : "Industrial Machinery/Components"
+    },
+    {
+      "symbol"   : "ASPN",
+      "name"     : "Aspen Aerogels",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AHL.PRA",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHL.PRB",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHL.PRC",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHL",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "AHL^A",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHL^B",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AHL^C",
+      "name"     : "Aspen Insurance Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AZPN",
+      "name"     : "Aspen Technology",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ASMB",
+      "name"     : "Assembly Biosciences",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ASB.PRB",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASB.PRC",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASB",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "Major Banks"
+    },
+    {
+      "symbol"   : "ASB.WS",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASB^B",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASB^C",
+      "name"     : "Associated Banc-Corp",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AC",
+      "name"     : "Associated Capital Group",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AIZ",
+      "name"     : "Assurant",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AGO.PRB",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGO.PRE",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGO.PRF",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGO",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "AGO^B",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGO^E",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AGO^F",
+      "name"     : "Assured Guaranty Ltd.",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ASFI",
+      "name"     : "Asta Funding",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ASTE",
+      "name"     : "Astec Industries",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "AST",
+      "name"     : "Asterias Biotherapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AF.PRC",
+      "name"     : "Astoria Financial Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AF",
+      "name"     : "Astoria Financial Corporation",
+      "industry" : "Savings Institutions"
+    },
+    {
+      "symbol"   : "AF^C",
+      "name"     : "Astoria Financial Corporation",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AZN",
+      "name"     : "Astrazeneca PLC",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ALOT",
+      "name"     : "Astro-Med",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "ATRO",
+      "name"     : "Astronics Corporation",
+      "industry" : "Military/Government/Technical"
+    },
+    {
+      "symbol"   : "ASTC",
+      "name"     : "Astrotech Corporation",
+      "industry" : "Military/Government/Technical"
+    },
+    {
+      "symbol"   : "ASUR",
+      "name"     : "Asure Software Inc",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "T",
+      "name"     : "AT&T Inc.",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "ATAI",
+      "name"     : "ATA Inc.",
+      "industry" : "Other Consumer Services"
+    },
+    {
+      "symbol"   : "ATRA",
+      "name"     : "Atara Biotherapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ATTO",
+      "name"     : "Atento S.A.",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "ATHN",
+      "name"     : "athenahealth",
+      "industry" : "Miscellaneous"
+    },
+    {
+      "symbol"   : "ATHX",
+      "name"     : "Athersys",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AAPC",
+      "name"     : "Atlantic Alliance Partnership Corp.",
+      "industry" : "Business Services"
+    },
+    {
+      "symbol"   : "AAME",
+      "name"     : "Atlantic American Corporation",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "ACBI",
+      "name"     : "Atlantic Capital Bancshares",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ACFC",
+      "name"     : "Atlantic Coast Financial Corporation",
+      "industry" : "Savings Institutions"
+    },
+    {
+      "symbol"   : "AT",
+      "name"     : "Atlantic Power Corporation",
+      "industry" : "Electric Utilities: Central"
+    },
+    {
+      "symbol"   : "ATNI",
+      "name"     : "Atlantic Tele-Network",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "ATLC",
+      "name"     : "Atlanticus Holdings Corporation",
+      "industry" : "Finance: Consumer Services"
+    },
+    {
+      "symbol"   : "AAWW",
+      "name"     : "Atlas Air Worldwide Holdings",
+      "industry" : "Transportation Services"
+    },
+    {
+      "symbol"   : "ATLS",
+      "name"     : "Atlas Energy",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "AFH",
+      "name"     : "Atlas Financial Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ARP.PRD",
+      "name"     : "Atlas Resource Partners",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARP.PRE",
+      "name"     : "Atlas Resource Partners",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARP",
+      "name"     : "Atlas Resource Partners",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "ARP^D",
+      "name"     : "Atlas Resource Partners",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ARP^E",
+      "name"     : "Atlas Resource Partners",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "TEAM",
+      "name"     : "Atlassian Corporation Plc",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "ATML",
+      "name"     : "Atmel Corporation",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "ATO",
+      "name"     : "Atmos Energy Corporation",
+      "industry" : "Oil/Gas Transmission"
+    },
+    {
+      "symbol"   : "ATOS",
+      "name"     : "Atossa Genetics Inc.",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "ATRC",
+      "name"     : "AtriCure",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ATRI",
+      "name"     : "ATRION Corporation",
+      "industry" : "Medical/Dental Instruments"
+    },
+    {
+      "symbol"   : "ATTU",
+      "name"     : "Attunity Ltd.",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "ATW",
+      "name"     : "Atwood Oceanics",
+      "industry" : "Energy"
+    },
+    {
+      "symbol"   : "LIFE",
+      "name"     : "aTyr Pharma",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AUO",
+      "name"     : "AU Optronics Corp",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "AUBN",
+      "name"     : "Auburn National Bancorporation",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "AUDC",
+      "name"     : "AudioCodes Ltd.",
+      "industry" : "Telecommunications Equipment"
+    },
+    {
+      "symbol"   : "AUPH",
+      "name"     : "Aurinia Pharmaceuticals Inc",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "EARS",
+      "name"     : "Auris Medical Holding AG",
+      "industry" : "Major Pharmaceuticals"
+    },
+    {
+      "symbol"   : "ADAT",
+      "name"     : "Authentidate Holding Corp.",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "ABTL",
+      "name"     : "Autobytel Inc.",
+      "industry" : "Computer Software: Programming"
+    },
+    {
+      "symbol"   : "ADSK",
+      "name"     : "Autodesk",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AGMX",
+      "name"     : "AutoGenomics",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "ATHM",
+      "name"     : "Autohome Inc.",
+      "industry" : "EDP Services"
+    },
+    {
+      "symbol"   : "ALV",
+      "name"     : "Autoliv",
+      "industry" : "Capital Goods"
+    },
+    {
+      "symbol"   : "ADP",
+      "name"     : "Automatic Data Processing",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AN",
+      "name"     : "AutoNation",
+      "industry" : "Consumer Durables"
+    },
+    {
+      "symbol"   : "AZO",
+      "name"     : "AutoZone",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AVGO",
+      "name"     : "Avago Technologies Limited",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "AAVL",
+      "name"     : "Avalanche Biotechnologies",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AWX",
+      "name"     : "Avalon Holdings Corporation",
+      "industry" : "Environmental Services"
+    },
+    {
+      "symbol"   : "AVB",
+      "name"     : "AvalonBay Communities",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AGR",
+      "name"     : "Avangrid",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AVNU",
+      "name"     : "Avenue Financial Holdings",
+      "industry" : "Finance"
+    },
+    {
+      "symbol"   : "ACP",
+      "name"     : "Avenue Income Credit Strategies Fund",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AVEO",
+      "name"     : "AVEO Pharmaceuticals",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AVY",
+      "name"     : "Avery Dennison Corporation",
+      "industry" : "Containers/Packaging"
+    },
+    {
+      "symbol"   : "AVG",
+      "name"     : "AVG Technologies N.V.",
+      "industry" : "Computer Software: Prepackaged Software"
+    },
+    {
+      "symbol"   : "AVH",
+      "name"     : "Avianca Holdings S.A.",
+      "industry" : "Air Freight/Delivery Services"
+    },
+    {
+      "symbol"   : "AVNW",
+      "name"     : "Aviat Networks",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AVID",
+      "name"     : "Avid Technology",
+      "industry" : "Miscellaneous"
+    },
+    {
+      "symbol"   : "AVGR",
+      "name"     : "Avinger",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "ASM",
+      "name"     : "Avino Silver",
+      "industry" : "Precious Metals"
+    },
+    {
+      "symbol"   : "CAR",
+      "name"     : "Avis Budget Group",
+      "industry" : "Consumer Services"
+    },
+    {
+      "symbol"   : "AVA",
+      "name"     : "Avista Corporation",
+      "industry" : "Power Generation"
+    },
+    {
+      "symbol"   : "AV",
+      "name"     : "Aviva plc",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AVV",
+      "name"     : "Aviva plc",
+      "industry" : "Life Insurance"
+    },
+    {
+      "symbol"   : "AVT",
+      "name"     : "Avnet",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "AVP",
+      "name"     : "Avon Products",
+      "industry" : "Consumer Non-Durables"
+    },
+    {
+      "symbol"   : "AVX",
+      "name"     : "AVX Corporation",
+      "industry" : "Electrical Products"
+    },
+    {
+      "symbol"   : "AWRE",
+      "name"     : "Aware",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AXTA",
+      "name"     : "Axalta Coating Systems Ltd.",
+      "industry" : "Paints/Coatings"
+    },
+    {
+      "symbol"   : "ACLS",
+      "name"     : "Axcelis Technologies",
+      "industry" : "Technology"
+    },
+    {
+      "symbol"   : "AXLL",
+      "name"     : "Axiall Corporation",
+      "industry" : "Major Chemicals"
+    },
+    {
+      "symbol"   : "AXPW",
+      "name"     : "Axion Power International",
+      "industry" : "Miscellaneous"
+    },
+    {
+      "symbol"   : "AXPWW",
+      "name"     : "Axion Power International",
+      "industry" : "Miscellaneous"
+    },
+    {
+      "symbol"   : "AXS.PRC",
+      "name"     : "Axis Capital Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AXS.PRD",
+      "name"     : "Axis Capital Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AXS",
+      "name"     : "Axis Capital Holdings Limited",
+      "industry" : "Property-Casualty Insurers"
+    },
+    {
+      "symbol"   : "AXS^C",
+      "name"     : "Axis Capital Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AXS^D",
+      "name"     : "Axis Capital Holdings Limited",
+      "industry" : "n/a"
+    },
+    {
+      "symbol"   : "AXGN",
+      "name"     : "AxoGen",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AXSM",
+      "name"     : "Axsome Therapeutics",
+      "industry" : "Health Care"
+    },
+    {
+      "symbol"   : "AXTI",
+      "name"     : "AXT Inc",
+      "industry" : "Semiconductors"
+    },
+    {
+      "symbol"   : "AZUR",
+      "name"     : "Azure Midstream Partners",
+      "industry" : "Public Utilities"
+    },
+    {
+      "symbol"   : "AZZ",
+      "name"     : "AZZ Inc.",
+      "industry" : "Building Products"
+    }
+  ]
+}

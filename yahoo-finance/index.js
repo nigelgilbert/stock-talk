@@ -1,3 +1,3 @@
 "use strict";
 
-module.exports = require('./yf');
+module.exports = require("./yf");

@@ -4,5 +4,8 @@
     "consumer_secret": "zv3CbjhpmlRuW7c5nPg1QrpfaWQnsppW5Q1isgiB86zaMYWRKY",
     "access_token_key": "4316280673-LhQ2VwRi6Zo1ACwsaD2s2k0AzOQJyhQh3Lbg2KI",
     "access_token_secret": "r4hVYwd7jbO4SVvWHJyKoOekBGox0jepyjsANhWPL4DnL"
+  },
+  "tracking": {
+    "track": "nasdaq,nasdaq-100,investment,AAPL,NFLX,MSFT,CSCO,YHOO,PYPL,QQQ,PCLN,GOOGL,SBUX,TSLA"
   }
 }
