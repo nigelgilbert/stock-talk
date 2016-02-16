@@ -2,10 +2,14 @@
 
 let jsonKeywords = require("../data/keywords.json").keywords;
 
-module.exports = function initialize(database) {
+module.exports = function constructor(database) {
   let keywords = database.addCollection("keywords");
-  for (let keyword of jsonKeywords) {
-    keywords.insert({ "keyword" : keyword.toLowerCase() });
-  }
+  populateFromJSON(keywords);
   return keywords;
+}
+
+function populateFromJSON(collection) {
+  for (let keyword of jsonKeywords) {
+   collection.insert({ "keyword" : keyword.toLowerCase() });
+  }
 }

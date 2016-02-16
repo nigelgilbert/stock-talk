@@ -1,5 +1,5 @@
 "use strict";
 
-module.exports = function initialize(database) {
+module.exports = function constructor(database) {
   return database.addCollection("ticks");
 }
