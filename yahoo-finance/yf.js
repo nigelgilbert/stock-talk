@@ -10,16 +10,29 @@ function makePath(symbol, querycode) {
 
   let streamURL = "/streamer/1.0?s=" + symbol +
                   "&k=" + querycode +
-                  "&callback=parent.yfs_u1f" + 
+                  "&callback=parent.yfs_u1f" +
                   "&mktmcb=parent.yfs_mktmcb" +
                   "&gencallback=parent.yfs_gencb";
 
   return streamURL;
 };
 
+function openHttpStream(options, stream) {
+  http.get(options, (res) => {
+      res.on("data",  (chunk) =>  { stream.recieve(chunk) });
+      res.on("error", (err) =>    { stream.emit("error") });
+      res.on("end",   () =>       { stream.emit("end") });
+  });
+  return stream;
+}
+
 function makeFinanceStream(symbol, querycode) {
+  if (typeof querycode === "undefined")
+    querycode = "l90"
+
   let stream = new StreamParser();
   let path = makePath(symbol, querycode);
+
   let options = {
     hostname: "streamerapi.finance.yahoo.com",
     path: path,
@@ -27,13 +40,7 @@ function makeFinanceStream(symbol, querycode) {
     "Connection": "keep-alive"
   };
 
-  http.get(options, (res) => {
-      res.on("data",  (chunk) =>  { stream.recieve(chunk) });
-      res.on("error", (err) =>    { stream.emit("error") });  
-      res.on("end",   () =>       { stream.emit("end") });
-    });
-
-  return stream;
+  return openHttpStream(options, stream);
 };
 
 module.exports.stream = function(symbol, querycode, callback) {

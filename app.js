@@ -8,30 +8,39 @@ var path = require("path");
 var app = express();
 app.use(express.static("dist/"));
 
-// Serve static content.
-app.get('/', (req, res) => {
-  res.sendFile('index.html', {
-    root: path.join(__dirname, "dist/")
-  });
-});
-
-// Returns a list of initial symbols.
-app.get("/api/top", (req, res) => {
-  let top = history.chain().sort(byRecordLastUpdate).limit(10);
-  res.json({ symbols: JSON.stringify(top) });
-});
-
+// Main execution thread.
 setInterval(function main() {
   const symbols = getMostRelevantSymbols(10);
   updateHistoryCollection(symbols);
   updateFinanceTracking(symbols);
 }, 20 * 1000);
 
+// Express route. Serve static content.
+app.get('/', (req, res) => {
+  res.sendFile('index.html', {
+    root: path.join(__dirname, "dist/")
+  });
+});
+
+// Express route. Returns a list of initial symbols.
+app.get("/api/top", (req, res) => {
+  let top = history.chain().sort(byRecordLastUpdate).limit(10);
+  res.json({ symbols: JSON.stringify(top) });
+});
+
 function updateFinanceTracking(symbols) {
-  yf.stream("SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV", "l90", (stream) => {
+  let query = getTwitterTrackingString(symbols);
+  return yf.stream(query, (stream) => {
     stream.on("data", (data) => { console.log(Object.keys(data)[0]); });
     stream.on("error", () =>    { console.log("Error."); });
   });
+}
+
+function getTwitterTrackingString(symbols) {
+  let query = symbols.reduce(symbol => {
+    return String(symbol) + ",";
+  });
+  return query.slice(0,-1);
 }
 
 function updateHistoryCollection(symbols) {

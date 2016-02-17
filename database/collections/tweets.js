@@ -2,8 +2,8 @@
 
 module.exports = function constructor(database) {
   let tweets = database.addCollection("tweets");
-  let frequencyView = tweets.addDynamicView("freqView", true);
-  tweets.byFrequency = frequencyView.applySort(compareTweetsByFreq).
+  let frequencyView = tweets.addDynamicView("freqView");
+  tweets.byFrequency = frequencyView.applySort(compareTweetsByFreq);
   return tweets;
 }
 
