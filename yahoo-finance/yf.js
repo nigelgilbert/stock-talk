@@ -40,7 +40,6 @@ function makeFinanceStream(symbol, querycode) {
     "Connection": "keep-alive"
   };
 
-  openHttpStream(options, stream);
   return openHttpStream(options, stream);
 };
 

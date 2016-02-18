@@ -1,9 +1,14 @@
 import { Component, View } from "angular2/core";
+import "./ticker.css";
 
 @Component({
   selector: "ticker",
   inputs: ["symbol"],
-  template: `<b>{{ symbol }}</b>`
+  template: `
+    <div class="container">
+      {{ symbol }}
+    <div>
+   `
 })
 export class Ticker {
   constructor() {}

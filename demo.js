@@ -59,8 +59,8 @@ twit.stream("statuses/filter", config.tracking, (stream) => {
 });
 
 // fire up the server.
-server.listen(8080, () => {
-  console.log("Server listening on port 8080.");
+server.listen(8081, () => {
+  console.log("Server listening on port 8081.");
 });
 
 ///////////////////////////////////////////////////////////////////////////////
