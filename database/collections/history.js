@@ -1,11 +1,11 @@
 "use strict";
 
-var https = require("https");
+var utils = require("../utils");
 
-module.exports = function initialize(database) {
+module.exports = function constructor(database) {
   let history = database.addCollection("history");
   history.create = create;
-  history.sync = sync;
+  history.sync = syncWithYahooFinance;
   // testCreateSync(history, "GOOG");
   return history;
 }
@@ -18,9 +18,9 @@ function create(symbol, times, closes) {
   });
 }
 
-function sync(symbol, callback) {
+function syncWithYahooFinance(symbol, callback) {
   let previous = this.findOne({ "symbol" : symbol });
-    queryFinanceAPI(symbol, (timestamps, closes) => {
+  queryFinanceAPI(symbol, (timestamps, closes) => {
     if (previous === "undefined") {
       this.create(symbol, timestamps, closes);
     } else {
@@ -38,7 +38,7 @@ function diff(latest, previous) {
 
 function queryFinanceAPI(symbol, callback) {
   let url = getFinanceQueryURL(symbol);
-  request(url, response => {
+  utils.request(url, response => {
     let data = JSON.parse(response);
     let timestamps = data.chart.result[0].timestamp;
     let closes = data.chart.result[0].indicators.quote[0].close;
@@ -55,24 +55,15 @@ function getFinanceQueryURL(symbol) {
 
 function getMarketOpenCloseTimes() {
   let today = new Date();
-  if (today.getHours() > 5) {
+  if (today.getHours() > 5)
     today.setDate(today.getDate() - 1);
-  }
+
   let open = today.setHours(9,0,0,0);
   let close = today.setHours(5,0,0,0);
   return {
     "open": Math.floor(open / 1000),
     "close": Math.floor(close / 1000)
   };
-}
-
-function request(url, callback) {
-  https.get(url, response => {
-    let body = "";
-    response.on("data", chunk =>  { body += chunk });
-    response.on("error", error => { throw error });
-    response.on("end", () =>      { callback(body) });
-  });
 }
 
 function testCreateSync(collection, symbol) {

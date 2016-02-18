@@ -18,7 +18,7 @@ yf.stream("SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV", "l90", (stream) => {
 // koa app for static files
 var app = koa();
 
-app.use(serve("dist/", {
+app.use(serve("public/", {
   index: "index.html"
 }));
 
@@ -55,7 +55,7 @@ var twit = new twitter(config.twitter);
 
 twit.stream("statuses/filter", config.tracking, (stream) => {
   let output = twitterStreamController.handle(stream);
-  output.subscribe(() => { console.log(Math.floor(Date.now() / 1000)); });
+  // output.subscribe(() => { console.log(Math.floor(Date.now() / 1000)); });
 });
 
 // fire up the server.

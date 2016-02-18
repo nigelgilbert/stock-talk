@@ -25,10 +25,27 @@ function isRelevant(tweet) {
   return false;
 }
 
+function clean(text) {
+  let tags = /[$@]\w+:*/g;
+  let urls = /https?[a-zA-Z:/.]*/g;
+  let multispaces = /\s\s+/g;
+  let hashes = /[0-9]\w+/g;
+  return text
+    .replace(tags, "")
+    .replace(urls, "")
+    .replace(hashes, "")
+    .replace(multispaces, " ");
+}
+
 // Boolean. Determines if the tweet has been processed already.
 function isCached(tweet) {
-  let cached = cache.get(tweet.text);
+  let cached = cache.get(clean(tweet.text));
   return (cached !== null) ? true : false;
+}
+
+// Caches the tweet.
+function cacheTweet(tweet) {
+  return cache.put(clean(tweet.text), true, 10000);
 }
 
 // Boolean.  Determines if there is parsable text in the tweet.
@@ -36,30 +53,22 @@ function isParsable(tweet) {
   return (typeof tweet.text !== "undefined") ? true : false;
 }
 
-// Caches the tweet.
-function cacheTweet(tweet) {
-  return cache.put(tweet.text, null, 10000);
-}
-
-function updateDatabaseSymbol(cached) {};
-function mapToDatabaseSymbol(tweet)   {};
-
 // Process tweets.  Returns an Observable of uncached tweets.
 function handleNewTweets(tweets) {
   let relevant = tweets.filter(isRelevant);
   relevant.subscribe(cacheTweet);
-  relevant.subscribe(tweet => console.log("RELEVANT: ", tweet.text));
+  relevant.subscribe(tweet => console.log("R:", clean(tweet.text)));
   return relevant;
 }
 
 // Process cached tweets. Returns an Observable of cached tweets.
 function handleCachedTweets(tweets) {
-  tweets.subscribe(tweet => console.log("CACHED: ", tweet.text));
+  tweets.subscribe(tweet => console.log("C:", clean(tweet.text)));
   return tweets;
 }
 
 // Processes a Node Stream of tweets. Returns an Observable.
-exports.handle = function(stream) {
+module.exports.handle = function(stream) {
   return makeStreamObservable(stream)
     .filter(isParsable)
     .groupBy(isCached)
