@@ -1,10 +1,11 @@
 body {
   display: flex;
   justify-content: center;
-  background-color: #f7f9f9;
   font-family: "Andale Mono";
   font-weight: 500;
-  color: #78909C;
+  color: #91BACF;
+  background: -webkit-linear-gradient(180deg, #F7F9F9, #ECEFF9) no-repeat fixed;
+  background: linear-gradient(160deg, #F7F9F9, #ECEFF9) no-repeat fixed;
 }
 
 #title {
@@ -23,7 +24,7 @@ body {
 
 #ticker-container {
   width: 400px;
-  height: 120px;
+  height: 248px;
   display: inline-block;
 }
 
@@ -38,6 +39,6 @@ body {
 
 @media screen and (min-width: 1400px) {
   #tickers-dashboard {
-    max-width: 1230px;
+    width: 1230px;
   }
 }

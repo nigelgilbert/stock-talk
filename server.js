@@ -1,12 +1,24 @@
 "use strict";
 
+var express = require("express");
+var io = require("socket.io");
+var http = require("http");
+var path = require("path");
 var db = require("./database");
 var yf = require("./yahoo-finance");
-var express = require("express");
-var path = require("path");
 
 var app = express();
+var server = http.Server(app);
+var socket = io(server);
+
+// App configuration.
+app.set("port", process.env.PORT || 8081);
 app.use(express.static("dist/"));
+
+// Fire up server.
+app.listen(app.get("port"), () => {
+  console.log("Express app listening on port", app.get("port"));
+});
 
 // Main execution thread.
 setInterval(function main() {

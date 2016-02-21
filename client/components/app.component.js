@@ -11,7 +11,7 @@ import "./app.css";
   directives: [Ticker],
   providers: [SymbolsService, RxSocketService],
   template: `
-    <h3 id="title">Angular 2 is dope</h3>
+    <h2 id="title">Angular 2 is dope</h2>
     <div id="content">
       <ul id="tickers-dashboard">
         <li id="ticker-container" *ngFor="#symbol of symbols">
@@ -27,5 +27,6 @@ export class App {
   }
   constructor(symbols, socket) {
     this.symbols = symbols.getData();
+    socket.getObservable().subscribe(data => console.log(data));
   }
 }

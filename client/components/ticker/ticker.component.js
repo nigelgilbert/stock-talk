@@ -7,14 +7,14 @@ import "./ticker.css";
   selector: "stock-ticker",
   inputs: ["symbol"],
   template: `
-    <div id="container">
+    <div class="fadeInDown" id="container">
       {{ symbol }}
+    </div>
+    <div class="chart" id="graph-1-container">
+    <div class="chart-svg">
     </div>
   `
 })
 export class Ticker {
-  //  <svg width="50" height="50">
-  //    <circle cx="25" cy="25" r="10" />
-  //  </svg>
-  constructor() {}
+
 }

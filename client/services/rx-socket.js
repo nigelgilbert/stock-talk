@@ -6,8 +6,14 @@ import io from "socket.io-client";
 export class RxSocketService {
   constructor() {
     this.socket = io();
-    this.socket.on("data", msg => { console.log(msg) });
-    console.log("constructed service");
+    this.socketObservable = Observable.fromEvent(this.socket, "data");
   }
-  getData() {}
+  getObservable(symbol) {
+    if (typeof symbol === "undefined") {
+      return this.socketObservable;
+    }
+    return this.socketObservable.filter(payload => {
+      return payload.symbol === symbol;
+    });
+  }
 }

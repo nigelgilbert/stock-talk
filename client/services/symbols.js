@@ -2,8 +2,7 @@
 
 export class SymbolsService {
   constructor() {
-    this._symbols = ["AAPL", "GOOG", "NFLX"];
-    console.log("symbol service created");
+    this._symbols = ["AAPL", "GOOG", "NFLX", "QQQ", "MSFT", "TSLA", "YHOO"];
   }
   getData() {
     return this._symbols;
