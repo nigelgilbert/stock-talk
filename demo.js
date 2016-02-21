@@ -55,7 +55,7 @@ var twit = new twitter(config.twitter);
 
 twit.stream("statuses/filter", config.tracking, (stream) => {
   let output = twitterStreamController.handle(stream);
-  // output.subscribe(() => { console.log(Math.floor(Date.now() / 1000)); });
+  output.subscribe((tweet) => { socket.emit("data", tweet.text) });
 });
 
 // fire up the server.

@@ -1,15 +1,20 @@
-import { Component, View } from "angular2/core";
+"use strict";
+
+import { Component } from "angular2/core";
 import "./ticker.css";
 
 @Component({
-  selector: "ticker",
+  selector: "stock-ticker",
   inputs: ["symbol"],
   template: `
-    <div class="container">
+    <div id="container">
       {{ symbol }}
-    <div>
-   `
+    </div>
+  `
 })
 export class Ticker {
+  //  <svg width="50" height="50">
+  //    <circle cx="25" cy="25" r="10" />
+  //  </svg>
   constructor() {}
 }
