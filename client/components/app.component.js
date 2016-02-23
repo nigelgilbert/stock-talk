@@ -23,9 +23,9 @@ import "./app.css";
 })
 export class App {
   static get parameters() {
-    return [[SymbolsService], [RxSocketService]];
+    return [[RxSocketService], [SymbolsService]];
   }
-  constructor(symbols, socket) {
+  constructor(socket, symbols) {
     this.symbols = symbols.getData();
     socket.getObservable().subscribe(data => console.log(data));
   }

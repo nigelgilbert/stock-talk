@@ -4,8 +4,8 @@ body {
   font-family: "Andale Mono";
   font-weight: 500;
   color: #91BACF;
-  background: -webkit-linear-gradient(180deg, #F7F9F9, #ECEFF9) no-repeat fixed;
-  background: linear-gradient(160deg, #F7F9F9, #ECEFF9) no-repeat fixed;
+  background: -webkit-linear-gradient(160deg, #F7F9F9, #ECEFFF) no-repeat fixed;
+  background: linear-gradient(160deg, #F7F9F9, #ECEFFC) no-repeat fixed;
 }
 
 #title {
@@ -13,7 +13,7 @@ body {
 }
 
 #tickers-dashboard {
-  width: 400px;
+  width: 420px;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -30,15 +30,15 @@ body {
 
 @media screen and (min-width: 768px) {
   #tickers-dashboard {
-    width: 820px;
+    width: 840px;
   }
   #ticker-container {
-    padding: 5px;
+    padding: 10px;
   }
 }
 
 @media screen and (min-width: 1400px) {
   #tickers-dashboard {
-    width: 1230px;
+    width: 1260px;
   }
 }
