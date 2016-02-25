@@ -27,7 +27,7 @@ export class Ticker {
   tick() {
     let x = 0;
     let y = 0;
-    setInterval(()=> {
+    return setInterval(()=> {
       y = this.rand(100);
       this.points += ` ${x},${y}`;
       x += 20;
