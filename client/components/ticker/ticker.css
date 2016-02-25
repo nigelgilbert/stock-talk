@@ -3,6 +3,7 @@ stock-ticker {
   height: 100%;
   display: flex;
   justify-content: center;
+  position: relative;
   align-items: center;
   border: 1px solid;
   border-radius: 2px;
@@ -15,4 +16,19 @@ stock-ticker {
 stock-ticker:hover {
   background: #F7F9FA;
   transition: all .2s linear;
+}
+
+#symbol-name {
+  position: absolute;
+  top: 0px;
+  left: 190px;
+}
+
+.chart {
+  background: none;
+  width: 200px;
+  height: 100px;
+  border-left: 2px dotted #91BACF;
+  border-bottom: 2px dotted #91BACF;
+  padding: 20px 20px 20px 0;
 }

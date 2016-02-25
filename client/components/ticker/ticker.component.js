@@ -7,14 +7,34 @@ import "./ticker.css";
   selector: "stock-ticker",
   inputs: ["symbol"],
   template: `
-    <div class="fadeInDown" id="container">
-      {{ symbol }}
-    </div>
-    <div class="chart" id="graph-1-container">
-    <div class="chart-svg">
-    </div>
+    <h4 id="symbol-name">{{symbol}}</h4>
+      <svg viewBox="0 0 298 150" class="chart" #chart>
+        <polyline
+          fill="none"
+          stroke="#91AFFF"
+          stroke-width="3"
+          [attr.points]="points"
+        />
+      </svg>
   `
 })
 export class Ticker {
+  constructor() {
+    this.points = "";
+    this.tick.call(this);
+  }
 
+  tick() {
+    let x = 0;
+    let y = 0;
+    setInterval(()=> {
+      y = this.rand(100);
+      this.points += ` ${x},${y}`;
+      x += 20;
+    },  this.rand(5000));
+  }
+
+  rand(range) {
+    return Math.floor((Math.random() * range) + 1);
+  }
 }
