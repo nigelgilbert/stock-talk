@@ -154,15 +154,17 @@ exports.init = function(config) {
   debug();
 };
 
-exports.Tweets = {};
-exports.StockTicks = {};
 exports.Symbols = {};
 
-exports.Tweets.insert = insertTweet;
-exports.Tweets.cull = deleteTweetsOlderThan;
-exports.Tweets.byBody = findTweetByBody;
-exports.Tweets.bySymbol = findTweetBySymbol;
-exports.Tweets.updateRt = updateRetweetCount;
+exports.Tweets = {
+  insert: insertTweet,
+  cull: deleteTweetsOlderThan,
+  findByBody: findTweetByBody,
+  findBySymbol: findTweetBySymbol,
+  retweet: updateRetweetCount
+};
 
-exports.StockTicks.insert = insertStockTick;
-exports.cull = deleteStockTicksOlderThan;
+exports.StockTicks = {
+  insert: insertStockTick,
+  cull: deleteStockTicksOlderThan
+};
