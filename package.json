@@ -16,6 +16,8 @@
     "utf-8": "^1.0.0"
   },
   "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.0.1",
     "nodemon": "^1.8.1"
   }
 }
