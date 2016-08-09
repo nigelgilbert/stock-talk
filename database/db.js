@@ -13,7 +13,7 @@ function createTables() {
         retweet_count INTEGER DEFAULT 0
       );
     `);
-    
+
     db.run(`
       CREATE TABLE IF NOT EXISTS Symbols (
         symbol_id INTEGER PRIMARY KEY,
@@ -38,7 +38,7 @@ function timestamp(t) {
   } else {
     date = new Date();
   }
-  return date.getTime(date); 
+  return date.getTime(date);
 }
 
 // Wraps a node-sqlite "get" query in a promise.

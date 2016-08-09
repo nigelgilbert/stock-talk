@@ -1,14 +1,17 @@
 I. What data do I need stored?
 
-  - Symbol
+  - Symbols
     - symbol_id
     - symbolname
 
-  - Tick
+  - Ticks
+    - id
     - symbol_id
+    - type (TODO)
     - value
 
-  - Tweet
+  - Tweets
+    - id
     - symbol_id
     - last_accessed
     - body
@@ -36,8 +39,8 @@ III. Making the tables:
   );
 
   CREATE TABLE Symbols (
-    symbol_id INTEGER PRIMARY KEY,
-    symbol TEXT, 
+    symbol_id INTEGER,
+    symbol TEXT PRIMARY KEY,
   );
 
   CREATE TABLE Ticks (
@@ -57,10 +60,10 @@ IV. SQL query implementation
   db.run("SELECT * FROM Tweets Where body=?, string);
 
   1.
-    SELECT * 
+    SELECT *
     FROM Tweets
     WHERE body = ?
-    
+
   2.
     SELECT *
     FROM Tweets
@@ -73,20 +76,20 @@ IV. SQL query implementation
   3.
     UPDATE Tweets
     SET retweet_count = retweet_count + 1
-    WHERE body = ? 
+    WHERE body = ?
 
   4.
     DELETE FROM Tweets
     WHERE last_accessed > ?
 
-  5. 
+  5.
     INSERT INTO Ticks (symbol_id, value)
     VALUES (?, ?)
 
   6.
     DELETE FROM Ticks
     WHERE last_accessed > ?
-  
+
   7.
     SELECT *
     FROM Tweets
