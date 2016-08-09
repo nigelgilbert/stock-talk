@@ -1,10 +1,10 @@
-"use strict";
+'use strict';
 
-var fs = require("fs");
-var path = require("path");
-var Rx = require("rxjs/Rx");
-var cache = require("memory-cache");
-var keywords = makeKeywordMap(require("./keywords.json").keywords);
+var fs = require('fs');
+var path = require('path');
+var Rx = require('rxjs/Rx');
+var cache = require('memory-cache');
+var keywords = makeKeywordMap(require('./keywords.json').keywords);
 
 // Returns an object that is used as a keyword map.
 function makeKeywordMap(keywords) {
@@ -20,11 +20,11 @@ function makeKeywordMap(keywords) {
 function makeStreamObservable(stream) {
   return Rx.Observable.fromEventPattern(
     function add(handler) {
-      stream.addListener("data", handler)
+      stream.addListener('data', handler)
     },
     function remove(handler) {
-      stream.removeListener("data", handler)
-    } 
+      stream.removeListener('data', handler)
+    }
   );
 };
 
@@ -32,20 +32,20 @@ function makeStreamObservable(stream) {
 function handleTweets(observable) {
   let tweets = observable.filter(isRelevant);
   tweets.subscribe(cacheTweet);
-  tweets.subscribe(tweet => console.log("RELEVANT: ", tweet.text));
+  tweets.subscribe(tweet => console.log('RELEVANT: ', tweet.text));
   return tweets;
 };
 
 // Processes cached tweets. Returns an Observable of cached tweets.
 function handleCachedTweets(observable) {
   let cached = observable;
-  cached.subscribe(tweet => console.log("CACHED: ", tweet.text));
+  cached.subscribe(tweet => console.log('CACHED: ', tweet.text));
   return cached;
 };
 
 // Boolean. Determines if the tweet contains relevant keywords.
 function isRelevant(tweet) {
-  let words = tweet.text.toLowerCase().split(" ");
+  let words = tweet.text.toLowerCase().split(' ');
   for (let i = 0; i < words.length; i++) {
     if (words[i] in keywords)
       return true;
@@ -61,7 +61,7 @@ function isCached(tweet) {
 
 // Boolean.  Determines if there is parsable text in the tweet.
 function isParsable(tweet) {
-  return (typeof tweet.text !== "undefined") ? true : false;
+  return (typeof tweet.text !== 'undefined') ? true : false;
 }
 
 // Caches the tweet.

@@ -15,24 +15,19 @@ var sock = socket.createSocket(server);
 var static_path = path.join(__dirname, "dist");
 app.use(express.static(static_path));
 
-server.listen(8080, () => { 
+server.listen(8080, () => {
   console.log('Server listening on port 8080.');
 });
 
-///////////////////////////////////////////////////////////////////////////////
 // yahoo-finance demo
-///////////////////////////////////////////////////////////////////////////////
+var yf = require('./yahoo-finance');
+yf.stream('SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV', 'l90', (stream) => {
+  stream.on('data',   (data) => { console.log(data); });
+  stream.on('error',  () =>     { console.log('Error.'); });
+});
 
-// var yf = require('./yahoo-finance');
-// yf.stream('SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV', 'l90', (stream) => {
-//   stream.on('data',   (data) => { console.log(data); });
-//   stream.on('error',  () =>     { console.log('Error.'); });
-// });
 
-///////////////////////////////////////////////////////////////////////////////
 // twitter stream demo
-///////////////////////////////////////////////////////////////////////////////
-
 // var twitter = require('twitter');
 // var config = require('./config');
 // var twitterStreamController = require('./controllers/twitterStream');
