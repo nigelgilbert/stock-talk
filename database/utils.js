@@ -1,6 +1,7 @@
 'use strict';
 
 // Creates a timestamp with time t, or now if t is undefined.
+// Timestamps in seconds.
 module.exports.timestamp = function (t) {
   var date;
   if (typeof t === 'undefined') {
@@ -8,5 +9,5 @@ module.exports.timestamp = function (t) {
   } else {
     date = new Date(t);
   }
-  return date.getTime(date);
-}
+  return date.getTime(date) / 1000;
+};
