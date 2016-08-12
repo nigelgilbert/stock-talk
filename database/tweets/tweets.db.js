@@ -12,8 +12,8 @@ module.exports.extends = function(database) {
     insert: insertTweet,
     cull: deleteTweetsOlderThan,
     find: {
-      byBody: findTweetsBySymbol,
-      bySymbol: findTweetsByBody
+      bySymbol: findTweetsBySymbol,
+      byBody: findTweetsByBody
     }
   };
 
@@ -32,7 +32,7 @@ function addTweetsTable(db) {
   return db;
 }
 
-function insertTweet(params) {
+function insertTweet(params, callback) {
   const symbol_name = params.symbol;
   const body = params.body;
   const now = utils.timestamp();
@@ -44,17 +44,17 @@ function insertTweet(params) {
       ${now}
     );
   `;
-  return db.run(query);
+  return db.run(query, callback);
 }
 
-function findTweetsBySymbol(symbol, callback) {
+function findTweetsBySymbol(symbol_name, callback) {
   const query = `
     SELECT *
     FROM Tweets
     WHERE symbol_id IN(
       SELECT id
       FROM Symbols
-      WHERE symbol='${symbol}'
+      WHERE symbol='${symbol_name}'
     );
   `;
   return db.all(query, callback);
@@ -69,10 +69,11 @@ function findTweetsByBody(body, callback) {
   return db.all(query, callback);
 }
 
-function deleteTweetsOlderThan(timestamp) {
-  db.run(`
+function deleteTweetsOlderThan(timestamp, callback) {
+  let dbTimestamp = utils.timestamp(timestamp);
+  const query = `
     DELETE FROM Tweets
-    WHERE last_accessed > ${timestamp}
-  `);
-  return db;
+    WHERE last_accessed > ${dbTimestamp}
+  `;
+  return db.run(query, callback);
 }
