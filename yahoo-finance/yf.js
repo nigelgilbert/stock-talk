@@ -18,9 +18,8 @@ function makePath(symbol, querycode) {
 
 function makeFinanceStream(symbol, querycode) {
   let parser = new StreamParser();
-  let path = makePath(symbol, querycode);
-
-  let options = {
+  const path = makePath(symbol, querycode);
+  const options = {
     path: path,
     Connection: 'keep-alive',
     hostname: 'streamerapi.finance.yahoo.com',
@@ -39,7 +38,7 @@ function makeFinanceStream(symbol, querycode) {
     });
   });
 
-  return stream;
+  return parser;
 }
 
 module.exports.stream = function(symbol, querycode, callback) {

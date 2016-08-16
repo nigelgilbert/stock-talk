@@ -18,9 +18,9 @@ function StreamParser() {
   EventEmitter.call(this);
   this.buffer = '';
   return this;
-};
+}
 
-StreamParser.prototype = Object.create(EventEmitter.prototype);
+util.inherits(StreamParser, EventEmitter);
 StreamParser.END = '{}</script>';
 StreamParser.ENDLENGTH = 12;
 
