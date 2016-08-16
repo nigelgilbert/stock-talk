@@ -14,7 +14,7 @@ function makePath(symbol, querycode) {
                     '&gencallback=parent.yfs_gencb';
 
   return streamURL;
-};
+}
 
 function makeFinanceStream(symbol, querycode) {
   let parser = new StreamParser();
@@ -40,7 +40,7 @@ function makeFinanceStream(symbol, querycode) {
   });
 
   return stream;
-};
+}
 
 module.exports.stream = function(symbol, querycode, callback) {
   let stream = makeFinanceStream(symbol, querycode);
