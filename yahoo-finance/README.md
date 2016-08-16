@@ -1,6 +1,6 @@
 ### Yahoo Finance
 
-Streaming library for live quotes from Yahoo Finance.
+Streaming library for live stock data from Yahoo Finance.
 
 ### Usage
 
@@ -8,8 +8,12 @@ Streaming library for live quotes from Yahoo Finance.
 var yf = require("./yahoo-finance");
 
 yf.stream("GOOG", "l90", (stream) => {
-  stream.on("data",   (data) => { console.log(data) });
-  stream.on("error",  () =>     { throw new Error("bad data") });
+  stream.on("data",   (data) => { 
+    console.log(data) 
+  });
+  stream.on("error",  () => {
+    throw new Error("bad data")
+  });
 });
 ```
 

@@ -13,13 +13,12 @@ module.exports.extends = function(database) {
 };
 
 function addSymbolsTable(db) {
-  db.run(`
+  return db.run(`
     CREATE TABLE IF NOT EXISTS Symbols (
       id INTEGER PRIMARY KEY,
       symbol TEXT
     );
   `);
-  return db;
 };
 
 function insertSymbol(params) {
