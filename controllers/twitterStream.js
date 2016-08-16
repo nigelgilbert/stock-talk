@@ -12,8 +12,8 @@ exports.handle = function(stream, callback) {
     .filter(isParsable)
     .groupBy(isCached)
     .flatMap(cached => {
-      if cached return handleCachedTweets(group);
-      else return handleTweets(group);
+      if (cached) return handleCachedTweets(group);
+      else return handleNewTweets(group);
     });
 };
 
@@ -40,7 +40,7 @@ function makeStreamObservable(stream) {
 }
 
 // Processes tweets.  Returns an Observable of uncached tweets.
-function handleTweets(observable) {
+function handleNewTweets(observable) {
   let tweets = observable.filter(isRelevant);
   tweets.subscribe(cacheTweet);
   tweets.subscribe(tweet => console.log('RELEVANT: ', tweet.text));

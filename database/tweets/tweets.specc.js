@@ -35,11 +35,6 @@ describe('Tweets', function() {
     it('should insert a row into the Tweets table', function(done) {
       const test_symbol = 'AAPL';
       const test_body = 'I love Steve Jobs!';
-
-      db.Symbols.insert({
-        symbol: test_symbol
-      });
-
       const query = `
         SELECT *
         FROM Tweets
@@ -50,6 +45,10 @@ describe('Tweets', function() {
         );
       `;
 
+      db.Symbols.insert({
+        symbol: test_symbol
+      });
+      
       db.Tweets.insert({
           symbol: test_symbol,
           body: test_body
@@ -65,7 +64,6 @@ describe('Tweets', function() {
 
   describe('Tweets.find.bySymbol()', function() {
     it('returns Tweets associated with a Symbol', function(done) {
-
       const test_symbol = 'AAPL';
       const test_body = 'I love Steve Jobs!';
 
@@ -87,7 +85,6 @@ describe('Tweets', function() {
 
   describe('Tweets.find.byBody()', function() {
     it('returns the tweet with that body', function(done) {
-
       const test_symbol = 'AAPL';
       const test_body = 'I love Steve Jobs!';     
 

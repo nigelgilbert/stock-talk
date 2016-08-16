@@ -77,3 +77,12 @@ function deleteTweetsOlderThan(timestamp, callback) {
   `;
   return db.run(query, callback);
 }
+
+function updateRetweetCount(body) {
+  var query = `
+    UPDATE Tweets
+    SET retweet_count = retweet_count + 1
+    WHERE body = ?
+  `;
+  db.run(query, body);
+}

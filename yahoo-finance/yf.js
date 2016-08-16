@@ -17,7 +17,7 @@ function makePath(symbol, querycode) {
 };
 
 function makeFinanceStream(symbol, querycode) {
-  let stream = new StreamParser();
+  let parser = new StreamParser();
   let path = makePath(symbol, querycode);
 
   let options = {
@@ -29,13 +29,13 @@ function makeFinanceStream(symbol, querycode) {
 
   http.get(options, (res) => {
     res.on('data', (chunk) => {
-      stream.recieve(chunk)
+      parser.recieve(chunk);
     });
     res.on('error', (err) => {
-      stream.emit('error')
+      parser.emit('error');
     });
     res.on('end', () => {
-      stream.emit('end')
+      parser.emit('end');
     });
   });
 
