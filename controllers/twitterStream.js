@@ -11,9 +11,9 @@ exports.handle = function(stream, callback) {
   return makeStreamObservable(stream)
     .filter(isParsable)
     .groupBy(isCached)
-    .flatMap(group => {
-      if (group.key === true) return handleCachedTweets(group);
-      else if (group.key === false) return handleTweets(group);
+    .flatMap(cached => {
+      if cached return handleCachedTweets(group);
+      else return handleTweets(group);
     });
 };
 
@@ -67,7 +67,7 @@ function isRelevant(tweet) {
 // Boolean. Determines if the tweet has been processed already.
 function isCached(tweet) {
   let cached = cache.get(tweet.text);
-  return (cached !== null) ? true : false;
+  return cached ? true : false;
 }
 
 // Boolean.  Determines if there is parsable text in the tweet.
