@@ -6,8 +6,8 @@ let log$ = new Rx.Subject;
 module.exports.log = function(params) {
   const defaults = {
     symbol: null,
-    table: '',
-    query: ''
+    table: null,
+    query: null
   };
   const entry = Object.assign({}, defaults, params);
   log$.onNext(entry);

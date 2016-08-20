@@ -11,10 +11,11 @@ module.exports.extends = function(database) {
   db.Tweets = {
     insert: insertTweet,
     cull: deleteTweetsOlderThan,
+    retweet : updateRetweetCount,
     find: {
       bySymbol: findTweetsBySymbol,
       byBody: findTweetsByBody
-    }
+    },
   };
 
   return db;
@@ -69,20 +70,20 @@ function findTweetsByBody(body, callback) {
   return db.all(query, callback);
 }
 
-function deleteTweetsOlderThan(timestamp, callback) {
-  let dbTimestamp = utils.timestamp(timestamp);
+function deleteTweetsOlderThan(date, callback) {
+  let timestamp = utils.timestamp(date);
   const query = `
     DELETE FROM Tweets
-    WHERE last_accessed > ${dbTimestamp}
+    WHERE last_accessed < ${timestamp}
   `;
   return db.run(query, callback);
 }
 
-function updateRetweetCount(body) {
+function updateRetweetCount(body, callback) {
   var query = `
     UPDATE Tweets
     SET retweet_count = retweet_count + 1
-    WHERE body = ?
+    WHERE body = '${body}'
   `;
-  db.run(query, body);
+  return db.run(query, callback);
 }

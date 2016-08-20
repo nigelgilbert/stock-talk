@@ -3,12 +3,13 @@
 var utils = require('../utils.js');
 var db = null;
 
-module.exports.extends = function(database) {
+module.exports.extends = function(database, callback) {
   db = database;
   db = addSymbolsTable(db);
   db.Symbols = {
     insert: insertSymbol
   };
+  if (callback) callback(null, db);
   return db;
 };
 
