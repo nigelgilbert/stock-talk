@@ -1,14 +1,17 @@
 'use strict';
 
+const utils = require('../utils');
 var db = null;
 
 module.exports.extends = function(database) {
   db = database;
   db = addStockTickTable(db);
   db.StockTicks = {
-    // find: {
-    //   bySymbol: findStockTicksBySymbol
-    // }
+    insert: insertStockTick,
+    cull: deleteStockTicksOlderThan,
+    find: {
+      bySymbol: findStockTicksBySymbol
+    }
   };
   return db;
 };
@@ -16,24 +19,42 @@ module.exports.extends = function(database) {
 function addStockTickTable(db) {
   return db.run(`
     CREATE TABLE IF NOT EXISTS StockTicks (
-      symbol_id Integer,
-      value REAL
+      last_accessed INTEGER,
+          symbol_id INTEGER,
+              value REAL
     );
   `);
 }
 
-function insertStockTick(symbol_name, value) {
-  var query = `
-    INSERT INTO Stock_Ticks (symbol_id, value)
-    VALUES ((SELECT symbol_id FROM Symbols WHERE symbol = ?), ?)
+function findStockTicksBySymbol(symbol_name, callback) {
+  const query = `
+    SELECT *
+    FROM StockTicks
+    WHERE symbol_id IN (
+      SELECT id
+      FROM Symbols
+      WHERE symbol='${symbol_name}'
+    );
   `;
-  db.run(query, symbol_name, value);
+  return db.all(query, callback);
 }
 
-function deleteStockTicksOlderThan(timestamp) {
-  var query = `
-    DELETE FROM Stock_Ticks
-    WHERE last_accessed > ?
+function insertStockTick(params, callback) {
+  const symbol_name = params.symbol;
+  const value = params.value;
+  const now = utils.timestamp();
+  const query = `
+    INSERT INTO StockTicks (symbol_id, value, last_accessed)
+    VALUES ((SELECT id FROM Symbols WHERE symbol = '${symbol_name}'), ${value}, ${now})
   `;
-  db.run(query, timestamp);
+  return db.run(query, callback);
+}
+
+function deleteStockTicksOlderThan(date, callback) {
+  const timestamp = utils.timestamp(date);
+  const query = `
+    DELETE FROM StockTicks
+    WHERE last_accessed < ${timestamp} 
+  `;
+  db.run(query, callback);
 }
