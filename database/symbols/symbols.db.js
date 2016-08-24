@@ -3,20 +3,19 @@
 var utils = require('../utils.js');
 var db = null;
 
-module.exports.extends = function(database, callback) {
+module.exports.extends = function(database) {
   db = database;
-  db = addSymbolsTable(db);
+  db = createSymbolsTable(db);
   db.Symbols = {
     insert: insertSymbol
   };
-  if (callback) callback(null, db);
   return db;
 };
 
-function addSymbolsTable(db) {
+function createSymbolsTable(db) {
   return db.run(`
     CREATE TABLE IF NOT EXISTS Symbols (
-      id INTEGER PRIMARY KEY,
+          id INTEGER PRIMARY KEY,
       symbol TEXT
     );
   `);

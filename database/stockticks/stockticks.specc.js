@@ -21,14 +21,18 @@ describe('StockTicks', function() {
     db = Symbols.extends(db);
   });
 
+  after(() => {
+    db.close();
+  });
+
   describe('StockTicks.extend()', function() {
     it('should make a StockTick table in the db', function(done) {
       const table_name = 'StockTicks';
       const query = `
         SELECT name
-        FROM sqlite_master
-        WHERE type='table'
-        AND name='${table_name}'
+          FROM sqlite_master
+         WHERE type='table'
+           AND name='${table_name}'
       `;
       db.get(query, (err, row) => {
         expect(row.name).to.equal(table_name);
@@ -41,11 +45,11 @@ describe('StockTicks', function() {
     it('should insert a row into the StockTick table', function(done) {
       const query = `
         SELECT *
-        FROM StockTicks
-        WHERE symbol_id IN(
+          FROM StockTicks
+         WHERE symbol_id IN (
           SELECT id
-          FROM Symbols
-          WHERE symbol='${TEST_SYMBOL}'
+            FROM Symbols
+           WHERE symbol='${TEST_SYMBOL}'
         );
       `;
 
@@ -106,10 +110,7 @@ describe('StockTicks', function() {
       db.StockTicks.insert({
         symbol: TEST_SYMBOL,
         value: TEST_FLOAT
-      }, cullAndAssertEmptyResults);    
+      }, cullAndAssertEmptyResults);
     });
-  });
-  after(() => {
-    db.close();
   });
 });
