@@ -5,13 +5,13 @@ var db = null;
 
 module.exports.extends = function(database) {
   db = database;
-  db = addTweetsTable(db);
+  db = createTweetTable(db);
 
   // Append Tweets api to db we're extending.
   db.Tweets = {
     insert: insertTweet,
     cull: deleteTweetsOlderThan,
-    retweet : updateRetweetCount,
+    retweet: updateRetweetCount,
     find: {
       bySymbol: findTweetsBySymbol,
       byBody: findTweetsByBody
@@ -21,11 +21,11 @@ module.exports.extends = function(database) {
   return db;
 };
 
-function addTweetsTable(db) {
+function createTweetTable(db) {
   db.run(`
-      CREATE TABLE IF NOT EXISTS Tweets (
-      symbol_id INTEGER,
-      body TEXT,
+    CREATE TABLE IF NOT EXISTS Tweets (
+          symbol_id INTEGER,
+               body TEXT,
       last_accessed INTEGER,
       retweet_count INTEGER DEFAULT 0
     );
@@ -38,11 +38,13 @@ function insertTweet(params, callback) {
   const body = params.body;
   const now = utils.timestamp();
   const query = `
-    INSERT INTO Tweets (symbol_id, body, last_accessed)
+    INSERT INTO Tweets (body, last_accessed, symbol_id)
     VALUES (
-      (SELECT id FROM Symbols WHERE symbol='${symbol_name}'),
       '${body}',
-      ${now}
+       ${now},
+      (SELECT id
+         FROM Symbols
+        WHERE symbol='${symbol_name}')
     );
   `;
   return db.run(query, callback);
@@ -51,11 +53,11 @@ function insertTweet(params, callback) {
 function findTweetsBySymbol(symbol_name, callback) {
   const query = `
     SELECT *
-    FROM Tweets
-    WHERE symbol_id IN(
-      SELECT id
-      FROM Symbols
-      WHERE symbol='${symbol_name}'
+       FROM Tweets
+      WHERE symbol_id IN (
+        SELECT id
+          FROM Symbols
+         WHERE symbol='${symbol_name}'
     );
   `;
   return db.all(query, callback);
@@ -63,9 +65,9 @@ function findTweetsBySymbol(symbol_name, callback) {
 
 function findTweetsByBody(body, callback) {
    const query = `
-    SELECT *
-    FROM tweets
-    WHERE body = '${body}'
+      SELECT *
+        FROM tweets
+       WHERE body = '${body}'
   `;
   return db.all(query, callback);
 }
@@ -74,7 +76,7 @@ function deleteTweetsOlderThan(date, callback) {
   let timestamp = utils.timestamp(date);
   const query = `
     DELETE FROM Tweets
-    WHERE last_accessed < ${timestamp}
+     WHERE last_accessed < ${timestamp}
   `;
   return db.run(query, callback);
 }
@@ -82,8 +84,8 @@ function deleteTweetsOlderThan(date, callback) {
 function updateRetweetCount(body, callback) {
   var query = `
     UPDATE Tweets
-    SET retweet_count = retweet_count + 1
-    WHERE body = '${body}'
+       SET retweet_count = retweet_count + 1
+     WHERE body = '${body}'
   `;
   return db.run(query, callback);
 }

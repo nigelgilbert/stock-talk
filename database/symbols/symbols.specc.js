@@ -18,9 +18,9 @@ describe('Symbols', function() {
       const table_name = 'Symbols';
       const query = `
         SELECT name
-        FROM sqlite_master
-        WHERE type='table'
-        AND name='${table_name}'
+          FROM sqlite_master
+         WHERE type='table'
+           AND name='${table_name}'
       `;
       db.get(query, (err, row) => {
         expect(row.name).to.equal(table_name);
@@ -35,8 +35,8 @@ describe('Symbols', function() {
       db.Symbols.insert({ symbol: test_symbol });
       const query = `
         SELECT *
-        FROM Symbols
-        WHERE symbol='${test_symbol}'
+          FROM Symbols
+         WHERE symbol='${test_symbol}'
       `;
       db.get(query, (err, row) => {
         expect(row.symbol).to.equal(test_symbol);

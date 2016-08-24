@@ -10,7 +10,7 @@ const Tweets = require('./tweets.db.js');
 const Symbols = require('../symbols/symbols.db.js');
 
 const TEST_SYMBOL = 'AAPL';
-const TEST_BODY = 'I love Steve Jobs!';     
+const TEST_BODY = 'I love Steve Jobs!';
 
 describe('Tweets', function() {
 
@@ -28,9 +28,9 @@ describe('Tweets', function() {
       const table_name = 'Tweets';
       const query = `
         SELECT name
-        FROM sqlite_master
-        WHERE type='table'
-        AND name='${table_name}'
+          FROM sqlite_master
+         WHERE type='table'
+           AND name='${table_name}'
       `;
       db.get(query, (err, row) => {
         expect(row.name).to.equal(table_name);
@@ -43,18 +43,18 @@ describe('Tweets', function() {
     it('should insert a row into the Tweets table', function(done) {
       const query = `
         SELECT *
-        FROM Tweets
-        WHERE symbol_id IN(
+          FROM Tweets
+         WHERE symbol_id IN (
           SELECT id
-          FROM Symbols
-          WHERE symbol='${TEST_SYMBOL}'
+            FROM Symbols
+           WHERE symbol='${TEST_SYMBOL}'
         );
       `;
 
       db.Symbols.insert({
         symbol: TEST_SYMBOL
       });
-      
+
       db.Tweets.insert({
           symbol: TEST_SYMBOL,
           body: TEST_BODY
@@ -124,7 +124,7 @@ describe('Tweets', function() {
       db.Tweets.insert({
         symbol: TEST_SYMBOL,
         body: TEST_BODY
-      }, cullAndAssertEmptyResults);    
+      }, cullAndAssertEmptyResults);
     });
   });
 
@@ -150,7 +150,7 @@ describe('Tweets', function() {
       db.Tweets.insert({
         symbol: TEST_SYMBOL,
         body: RT_BODY
-      }, RetweetAndAssertIncremented);    
+      }, RetweetAndAssertIncremented);
     });
   });
 });
