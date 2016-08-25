@@ -44,7 +44,7 @@
 ## StockTicks.extends(database) ⇒ <code>object</code>
 Creates a StockTick table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> - db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -55,7 +55,7 @@ Creates a StockTick table in the sqlite db, extends it with ORM methods.
 ## StockTicks.insert(params, callback) ⇒ <code>object</code>
 Inserts a StockTick row into the database for a yahoo finance event.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -69,7 +69,7 @@ Inserts a StockTick row into the database for a yahoo finance event.
 ## StockTicks.find.bySymbol(symbol_name, callback) ⇒ <code>object</code>
 Tries to find a row in the StockTicks table by its symbol.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -81,7 +81,7 @@ Tries to find a row in the StockTicks table by its symbol.
 ## StockTicks.cull(date, callback) ⇒ <code>object</code>
 Deletes all StockTicks older than the given javascript Date object.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -93,7 +93,7 @@ Deletes all StockTicks older than the given javascript Date object.
 ## Symbols.extends(database) ⇒ <code>object</code>
 Creates a Symbol table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> - db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -104,7 +104,7 @@ Creates a Symbol table in the sqlite db, extends it with ORM methods.
 ## Symbols.insert(params, callback) ⇒ <code>object</code>
 Inserts a Symbol row into the database.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -117,7 +117,7 @@ Inserts a Symbol row into the database.
 ## Tweets.extends(database) ⇒ <code>object</code>
 Creates a Tweets table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> - db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -128,7 +128,7 @@ Creates a Tweets table in the sqlite db, extends it with ORM methods.
 ## Tweets.insert(params, callback) ⇒ <code>object</code>
 Inserts a Tweet row into the database.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -142,7 +142,7 @@ Inserts a Tweet row into the database.
 ## Tweets.find.bySymbol(symbol_name, callback) ⇒ <code>object</code>
 Tries to find a row in the Tweets table by its symbol.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -154,7 +154,7 @@ Tries to find a row in the Tweets table by its symbol.
 ## Tweets.find.byBody(body, callback) ⇒ <code>object</code>
 Tries to find a row in the Tweets table by its body.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -166,7 +166,7 @@ Tries to find a row in the Tweets table by its body.
 ## Tweets.retweet(body, callback) ⇒ <code>object</code>
 Increments a Tweets' retweet count.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
@@ -178,7 +178,7 @@ Increments a Tweets' retweet count.
 ## Tweets.cull(date, callback) ⇒ <code>object</code>
 Deletes all Tweets older than the given javascript Date object.
 
-**Returns**: <code>object</code> - db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
 
 | Param | Type | Description |
 | --- | --- | --- |
