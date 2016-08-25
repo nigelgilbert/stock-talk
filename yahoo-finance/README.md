@@ -8,10 +8,10 @@ Streaming library for live stock data from Yahoo Finance.
 var yf = require("./yahoo-finance");
 
 yf.stream("GOOG", "l90", (stream) => {
-  stream.on("data",   (data) => { 
+  stream.on("data", (data) => { 
     console.log(data);
   });
-  stream.on("error",  () => {
+  stream.on("error", () => {
     throw new Error("bad data");
   });
 });
