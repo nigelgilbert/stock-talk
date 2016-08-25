@@ -5,7 +5,8 @@
   "scripts": {
     "start": "nodemon server.js",
     "test": "mocha database --recursive --watch",
-    "lint": "eslint . --ext .js"
+    "lint": "eslint . --ext .js",
+    "docs": "jsdoc2md 'database/**/*.js' > database/README.md"
   },
   "eslintConfig": {
     "sourceType": "module",
