@@ -3,11 +3,16 @@
 var utils = require('../utils.js');
 var db = null;
 
+/**
+ * Creates a Tweets table in the sqlite db, extends it with ORM methods.
+ * @param {object} database - a node-sqlite3 database.
+ * @returns {object} db - the modified node-sqlite3 database.
+ */
 module.exports.extends = function(database) {
   db = database;
   db = createTweetTable(db);
 
-  // Append Tweets api to db we're extending.
+  // Extend Tweets api.
   db.Tweets = {
     insert: insertTweet,
     cull: deleteTweetsOlderThan,
@@ -33,6 +38,14 @@ function createTweetTable(db) {
   return db;
 }
 
+/**
+ * Inserts a Tweet row into the database.
+ * @param {object} params - a Tweet specc.
+ * @param {string} params.symbol - a stock symbol.
+ * @param {string} params.body - the text content of the Tweet.
+ * @param {callback} callback - called after db write, handles errors.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
 function insertTweet(params, callback) {
   const symbol_name = params.symbol;
   const body = params.body;
@@ -50,6 +63,12 @@ function insertTweet(params, callback) {
   return db.run(query, callback);
 }
 
+/**
+ * Tries to find a row in the Tweets table by its symbol.
+ * @param {string} symbol_name - a stock symbol.
+ * @param {callback} callback - passed an error and an array of Tweets.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
 function findTweetsBySymbol(symbol_name, callback) {
   const query = `
     SELECT *
@@ -63,6 +82,12 @@ function findTweetsBySymbol(symbol_name, callback) {
   return db.all(query, callback);
 }
 
+/**
+ * Tries to find a row in the Tweets table by its body.
+ * @param {string} body - a Tweet body.
+ * @param {callback} callback - passed an error and an array of Tweets.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
 function findTweetsByBody(body, callback) {
    const query = `
       SELECT *
@@ -72,20 +97,32 @@ function findTweetsByBody(body, callback) {
   return db.all(query, callback);
 }
 
-function deleteTweetsOlderThan(date, callback) {
-  let timestamp = utils.timestamp(date);
+/**
+ * Increments a Tweets' retweet count.
+ * @param {string} body - a Tweet body.
+ * @param {callback} callback - called after increment occurs, handles errors.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
+function updateRetweetCount(body, callback) {
   const query = `
-    DELETE FROM Tweets
-     WHERE last_accessed < ${timestamp}
+    UPDATE Tweets
+       SET retweet_count = retweet_count + 1
+     WHERE body = '${body}'
   `;
   return db.run(query, callback);
 }
 
-function updateRetweetCount(body, callback) {
-  var query = `
-    UPDATE Tweets
-       SET retweet_count = retweet_count + 1
-     WHERE body = '${body}'
+/**
+ * Deletes all Tweets older than the given javascript Date object.
+ * @param {Date} date - anything older than this will be deleted.
+ * @param {callback} callback - called after deletion, handles errors.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
+function deleteTweetsOlderThan(date, callback) {
+  const timestamp = utils.timestamp(date);
+  const query = `
+    DELETE FROM Tweets
+     WHERE last_accessed < ${timestamp}
   `;
   return db.run(query, callback);
 }

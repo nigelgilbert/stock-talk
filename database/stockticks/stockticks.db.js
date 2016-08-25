@@ -3,6 +3,11 @@
 const utils = require('../utils');
 var db = null;
 
+/**
+ * Creates a StockTick table in the sqlite db, extends it with ORM methods.
+ * @param {object} database - a node-sqlite3 database.
+ * @returns {object} db - the modified node-sqlite3 database.
+ */
 module.exports.extends = function(database) {
   db = database;
   db = createStockTickTable(db);
@@ -26,19 +31,14 @@ function createStockTickTable(db) {
   `);
 }
 
-function findStockTicksBySymbol(symbol_name, callback) {
-  const query = `
-    SELECT *
-      FROM StockTicks
-     WHERE symbol_id IN (
-      SELECT id
-        FROM Symbols
-       WHERE symbol='${symbol_name}'
-    );
-  `;
-  return db.all(query, callback);
-}
-
+/**
+ * Inserts a StockTick row into the database for a yahoo finance event.
+ * @param {object} params - a StockTick event specc.
+ * @param {string} params.symbol - a stock symbol.
+ * @param {string} params.value - the dollar value of the event.
+ * @param {callback} callback - called after db write, handles errors.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
 function insertStockTick(params, callback) {
   const symbol_name = params.symbol;
   const value = params.value;
@@ -56,6 +56,31 @@ function insertStockTick(params, callback) {
   return db.run(query, callback);
 }
 
+/**
+ * Tries to find a row in the StockTicks table by its symbol.
+ * @param {string} symbol_name - a stock symbol.
+ * @param {callback} callback - passed an error or and array of Tweets.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
+function findStockTicksBySymbol(symbol_name, callback) {
+  const query = `
+    SELECT *
+      FROM StockTicks
+     WHERE symbol_id IN (
+      SELECT id
+        FROM Symbols
+       WHERE symbol='${symbol_name}'
+    );
+  `;
+  return db.all(query, callback);
+}
+
+/**
+ * Deletes all StockTicks older than the given javascript Date object.
+ * @param {Date} date - anything older than this will be deleted.
+ * @param {callback} callback - called after deletion, handles errors.
+ * @returns {object} db - a node-sqlite database for method chaining.
+ */
 function deleteStockTicksOlderThan(date, callback) {
   const timestamp = utils.timestamp(date);
   const query = `
