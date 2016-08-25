@@ -9,10 +9,10 @@ var yf = require("./yahoo-finance");
 
 yf.stream("GOOG", "l90", (stream) => {
   stream.on("data",   (data) => { 
-    console.log(data) 
+    console.log(data);
   });
   stream.on("error",  () => {
-    throw new Error("bad data")
+    throw new Error("bad data");
   });
 });
 ```
