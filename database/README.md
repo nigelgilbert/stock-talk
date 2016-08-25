@@ -44,144 +44,144 @@
 ## StockTicks.extends(database) ⇒ <code>object</code>
 Creates a StockTick table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database
 
 | Param | Type | Description |
 | --- | --- | --- |
-| database | <code>object</code> | a node-sqlite3 database. |
+| database | <code>object</code> | a node-sqlite3 database |
 
 <a name="StockTicks.insert"></a>
 
 ## StockTicks.insert(params, callback) ⇒ <code>object</code>
 Inserts a StockTick row into the database for a yahoo finance event.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | a StockTick event specc. |
-| params.symbol | <code>string</code> | a stock symbol. |
-| params.value | <code>string</code> | the dollar value of the event. |
-| callback | <code>callback</code> | called after db write, handles errors. |
+| params | <code>object</code> | a StockTick event specc |
+| params.symbol | <code>string</code> | a stock symbol |
+| params.value | <code>string</code> | the dollar value of the event |
+| callback | <code>callback</code> | called after db write, handles errors |
 
 <a name="StockTicks.find.bySymbol"></a>
 
 ## StockTicks.find.bySymbol(symbol_name, callback) ⇒ <code>object</code>
 Tries to find a row in the StockTicks table by its symbol.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| symbol_name | <code>string</code> | a stock symbol. |
-| callback | <code>callback</code> | passed an error or and array of Tweets. |
+| symbol_name | <code>string</code> | a stock symbol |
+| callback | <code>callback</code> | passed an error or and array of Tweets |
 
 <a name="StockTicks.cull"></a>
 
 ## StockTicks.cull(date, callback) ⇒ <code>object</code>
 Deletes all StockTicks older than the given javascript Date object.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| date | <code>Date</code> | anything older than this will be deleted. |
-| callback | <code>callback</code> | called after deletion, handles errors. |
+| date | <code>Date</code> | anything older than this will be deleted |
+| callback | <code>callback</code> | called after deletion, handles errors |
 
 <a name="Symbols.extends"></a>
 
 ## Symbols.extends(database) ⇒ <code>object</code>
 Creates a Symbol table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database
 
 | Param | Type | Description |
 | --- | --- | --- |
-| database | <code>object</code> | a node-sqlite3 database. |
+| database | <code>object</code> | a node-sqlite3 database |
 
 <a name="Symbols.insert"></a>
 
 ## Symbols.insert(params, callback) ⇒ <code>object</code>
 Inserts a Symbol row into the database.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | a Tweet entry specc. |
-| params.symbol | <code>string</code> | a stock symbol. |
-| callback | <code>callback</code> | called after db write, handles errors. |
+| params | <code>object</code> | a Tweet entry specc |
+| params.symbol | <code>string</code> | a stock symbol |
+| callback | <code>callback</code> | called after db write, handles errors |
 
 <a name="Tweets.extends"></a>
 
 ## Tweets.extends(database) ⇒ <code>object</code>
 Creates a Tweets table in the sqlite db, extends it with ORM methods.
 
-**Returns**: <code>object</code> db - the modified node-sqlite3 database.
+**Returns**: <code>object</code> db - the modified node-sqlite3 database
 
 | Param | Type | Description |
 | --- | --- | --- |
-| database | <code>object</code> | a node-sqlite3 database. |
+| database | <code>object</code> | a node-sqlite3 database |
 
 <a name="Tweets.insert"></a>
 
 ## Tweets.insert(params, callback) ⇒ <code>object</code>
 Inserts a Tweet row into the database.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| params | <code>object</code> | a Tweet specc. |
-| params.symbol | <code>string</code> | a stock symbol. |
-| params.body | <code>string</code> | the text content of the Tweet. |
-| callback | <code>callback</code> | called after db write, handles errors. |
+| params | <code>object</code> | a Tweet specc |
+| params.symbol | <code>string</code> | a stock symbol |
+| params.body | <code>string</code> | the text content of the Tweet |
+| callback | <code>callback</code> | called after db write, handles errors |
 
 <a name="Tweets.find.bySymbol"></a>
 
 ## Tweets.find.bySymbol(symbol_name, callback) ⇒ <code>object</code>
 Tries to find a row in the Tweets table by its symbol.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| symbol_name | <code>string</code> | a stock symbol. |
-| callback | <code>callback</code> | passed an error and an array of Tweets. |
+| symbol_name | <code>string</code> | a stock symbol |
+| callback | <code>callback</code> | passed an error and an array of Tweets |
 
 <a name="Tweets.find.byBody"></a>
 
 ## Tweets.find.byBody(body, callback) ⇒ <code>object</code>
 Tries to find a row in the Tweets table by its body.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| body | <code>string</code> | a Tweet body. |
-| callback | <code>callback</code> | passed an error and an array of Tweets. |
+| body | <code>string</code> | a Tweet body |
+| callback | <code>callback</code> | passed an error and an array of Tweets |
 
 <a name="Tweets.retweet"></a>
 
 ## Tweets.retweet(body, callback) ⇒ <code>object</code>
 Increments a Tweets' retweet count.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| body | <code>string</code> | a Tweet body. |
-| callback | <code>callback</code> | called after increment occurs, handles errors. |
+| body | <code>string</code> | a Tweet body |
+| callback | <code>callback</code> | called after increment occurs, handles errors |
 
 <a name="Tweets.cull"></a>
 
 ## Tweets.cull(date, callback) ⇒ <code>object</code>
 Deletes all Tweets older than the given javascript Date object.
 
-**Returns**: <code>object</code> db - a node-sqlite database for method chaining.
+**Returns**: <code>object</code> db - a node-sqlite database for method chaining
 
 | Param | Type | Description |
 | --- | --- | --- |
-| date | <code>Date</code> | anything older than this will be deleted. |
-| callback | <code>callback</code> | called after deletion, handles errors. |
+| date | <code>Date</code> | anything older than this will be deleted |
+| callback | <code>callback</code> | called after deletion, handles errors |
 
