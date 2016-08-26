@@ -7,7 +7,6 @@
  * Inherits from EventEmitter to implement a stream interface.
  * https://nodejs.org/api/stream.html
  */
-
 var EventEmitter = require('eventemitter3');
 var utf8 = require('utf8');
 var util = require('util');

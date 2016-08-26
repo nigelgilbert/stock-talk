@@ -4,9 +4,7 @@ var express = require('express');
 var path = require('path');
 var http = require('http');
 var socket = require('./socket');
-var db = require('./database/db');
-
-db.init();
+var db = require('./database');
 
 var app = express();
 var server = http.createServer(app);
