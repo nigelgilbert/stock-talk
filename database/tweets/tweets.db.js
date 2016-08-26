@@ -5,8 +5,8 @@ var db = null;
 
 /**
  * Creates a Tweets table in the sqlite db, extends it with ORM methods.
- * @param {object} database - a node-sqlite3 database.
- * @returns {object} db - the modified node-sqlite3 database.
+ * @param {object} database - a node-sqlite3 database
+ * @returns {object} the modified node-sqlite3 database
  */
 module.exports.extends = function(database) {
   db = database;
@@ -40,11 +40,11 @@ function createTweetTable(db) {
 
 /**
  * Inserts a Tweet row into the database.
- * @param {object} params - a Tweet specc.
- * @param {string} params.symbol - a stock symbol.
- * @param {string} params.body - the text content of the Tweet.
- * @param {callback} callback - called after db write, handles errors.
- * @returns {object} db - a node-sqlite database for method chaining.
+ * @param {object} params - a Tweet specc
+ * @param {string} params.symbol - a stock symbol
+ * @param {string} params.body - the text content of the Tweet
+ * @param {callback} callback - called after db write, handles errors
+ * @returns {object} a node-sqlite database for method chaining
  */
 function insertTweet(params, callback) {
   const symbol_name = params.symbol;
@@ -65,9 +65,9 @@ function insertTweet(params, callback) {
 
 /**
  * Tries to find a row in the Tweets table by its symbol.
- * @param {string} symbol_name - a stock symbol.
- * @param {callback} callback - passed an error and an array of Tweets.
- * @returns {object} db - a node-sqlite database for method chaining.
+ * @param {string} symbol_name - a stock symbol
+ * @param {callback} callback - passed an error and an array of Tweets
+ * @returns {object} a node-sqlite database for method chaining
  */
 function findTweetsBySymbol(symbol_name, callback) {
   const query = `
@@ -84,9 +84,9 @@ function findTweetsBySymbol(symbol_name, callback) {
 
 /**
  * Tries to find a row in the Tweets table by its body.
- * @param {string} body - a Tweet body.
- * @param {callback} callback - passed an error and an array of Tweets.
- * @returns {object} db - a node-sqlite database for method chaining.
+ * @param {string} body - a Tweet body
+ * @param {callback} callback - passed an error and an array of Tweets
+ * @returns {object} a node-sqlite database for method chaining
  */
 function findTweetsByBody(body, callback) {
    const query = `
@@ -99,9 +99,9 @@ function findTweetsByBody(body, callback) {
 
 /**
  * Increments a Tweets' retweet count.
- * @param {string} body - a Tweet body.
- * @param {callback} callback - called after increment occurs, handles errors.
- * @returns {object} db - a node-sqlite database for method chaining.
+ * @param {string} body - a Tweet body
+ * @param {callback} callback - called after increment occurs, handles errors
+ * @returns {object} a node-sqlite database for method chaining
  */
 function updateRetweetCount(body, callback) {
   const query = `
@@ -114,9 +114,9 @@ function updateRetweetCount(body, callback) {
 
 /**
  * Deletes all Tweets older than the given javascript Date object.
- * @param {Date} date - anything older than this will be deleted.
- * @param {callback} callback - called after deletion, handles errors.
- * @returns {object} db - a node-sqlite database for method chaining.
+ * @param {Date} date - anything older than this will be deleted
+ * @param {callback} callback - called after deletion, handles errors
+ * @returns {object} a node-sqlite database for method chaining
  */
 function deleteTweetsOlderThan(date, callback) {
   const timestamp = utils.timestamp(date);
