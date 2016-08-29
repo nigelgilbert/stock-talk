@@ -4,7 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var Rx = require('rxjs/Rx');
 var cache = require('memory-cache');
-var keywords = makeKeywordMap(require('./keywords.json').keywords);
+var keywords = makeKeywordMap(require('../config.json').keywords);
 
 // Processes a Node Stream of tweets. Returns an Observable.
 exports.handle = function(stream, callback) {
@@ -78,6 +78,10 @@ function isParsable(tweet) {
 // Caches the tweet.
 function cacheTweet(tweet) {
   cache.put(tweet.text,1, 10000);
+}
+
+function isStoredInDb(tweet) {
+
 }
 
 function updateDatabaseSymbol(cached) {}
