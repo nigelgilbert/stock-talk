@@ -26,13 +26,17 @@ yf.stream('SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV', 'l90', (stream) => {
 
 
 // twitter stream demo
-// var twitter = require('twitter');
-// var config = require('./config');
-// var twitterStreamController = require('./controllers/twitterStream');
+var twitter = require('twitter');
+var config = require('./config');
+var twitterStreamHandler = require('./sinks/twitterStreamHandler');
 
-// var twit = new twitter(config.twitter);
+var twit = new twitter(config.twitter);
 
-// twit.stream('statuses/filter', { track: 'justin' }, (stream) => {
-//   let output = twitterStreamController.handle(stream);
-//   output.subscribe(() => console.log(':)'));
-// });
+twit.stream('statuses/filter', { track: 'justin' }, (stream) => {
+  stream.on("error", (err) => {
+    console.log(err);
+    throw err;
+  });
+  let output = twitterStreamHandler.handle(stream);
+  output.subscribe(() => console.log(':)'));
+});
