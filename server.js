@@ -38,5 +38,12 @@ twit.stream('statuses/filter', { track: config.keywords.toString() }, (stream) =
     throw err;
   });
   let output = twitterStreamHandler.handle(stream);
-  output.subscribe(() => console.log(':)'));
+  output.subscribe(
+    function onNext(x) {
+        console.log(':)');
+    },
+    function onError(err) {
+        console.log('ONERROR CALLED!!1!');
+    }
+  );
 });
