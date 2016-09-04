@@ -3,6 +3,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 var sqlite3 = require('sqlite3');
+var async = require('async');
 const utils = require('../utils');
 
 var StockTicks = require('./stockticks.db.js');
@@ -53,19 +54,25 @@ describe('StockTicks', function() {
         );
       `;
 
-      db.Symbols.insert({
-        symbol: TEST_SYMBOL
-      });
+        function seed(callback) {
+          db.Symbols.insert({ symbol: TEST_SYMBOL }, callback);
+        }
 
-      db.StockTicks.insert({
-        symbol: TEST_SYMBOL,
-        value: TEST_FLOAT
-      }, function() {
-        db.get(query, (err, row) => {
-          expect(row.value).to.equal(TEST_FLOAT);
-          done();
-        });
-      });
+        function insert(callback) {
+          db.StockTicks.insert({
+            symbol: TEST_SYMBOL,
+            value: TEST_FLOAT
+          }, callback);
+        }
+
+        function assert(callback) {
+          db.get(query, (err, row) => {
+            expect(row.value).to.equal(TEST_FLOAT);
+            done();
+          });
+        }
+
+        async.series([seed, insert, assert]);
     });
   });
 
