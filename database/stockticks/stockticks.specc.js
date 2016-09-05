@@ -4,10 +4,10 @@ var chai = require('chai');
 var expect = chai.expect;
 var sqlite3 = require('sqlite3');
 var async = require('async');
-const utils = require('../utils');
+var utils = require('../utils');
 
 var StockTicks = require('./stockticks.db.js');
-const Symbols = require('../symbols/symbols.db.js');
+var Symbols = require('../symbols/symbols.db.js');
 var db = null;
 
 const TEST_SYMBOL = 'AAPL';
@@ -25,6 +25,19 @@ describe('StockTicks', function() {
   after(() => {
     db.close();
   });
+
+  function seed(callback) {
+    db.Symbols.insert({
+      symbol: TEST_SYMBOL
+    }, callback);
+  }
+
+  function insert(callback) {
+    db.StockTicks.insert({
+      symbol: TEST_SYMBOL,
+      value: TEST_FLOAT
+    }, callback);
+  }
 
   describe('StockTicks.extend()', function() {
     it('should make a StockTick table in the db', function(done) {
@@ -53,85 +66,31 @@ describe('StockTicks', function() {
            WHERE symbol='${TEST_SYMBOL}'
         );
       `;
-      function seed(callback) {
-        db.Symbols.insert({
-          symbol: TEST_SYMBOL
-        }, callback);
-      }
-      function insert(callback) {
-        db.StockTicks.insert({
-          symbol: TEST_SYMBOL,
-          value: TEST_FLOAT
-        }, callback);
-      }
       function assert(callback) {
         db.get(query, (err, row) => {
           expect(row.value).to.equal(TEST_FLOAT);
           done();
         });
       }
-
       async.series([seed, insert, assert]);
     });
   });
 
   describe('StockTicks.find.bySymbol()', function() {
     it('returns the StockTicks with the symbol paramater', function(done) {
-      function seed(callback) {
-        db.Symbols.insert({
-          'symbol': TEST_SYMBOL
-        }, callback);
-      }
-      function insert(callback) {
-        db.StockTicks.insert({
-          symbol: TEST_SYMBOL,
-          value: TEST_FLOAT
-        }, callback);
-      }
-      function find(callback) {
-        db.StockTicks.find.bySymbol(TEST_SYMBOL, callback);
-        console.log("third.");
-      }
       function assert(error, rows) {
-        console.log("error", typeof error);
-        console.log("rows", typeof rows);
-        expect(rows[0].value).to.equal(TEST_FLOAT);
-        console.log("done.");
-        done();
+        db.StockTicks.find.bySymbol(TEST_SYMBOL, (err, rows) => {
+          if (err) throw err;
+          expect(rows[0].value).to.equal(TEST_FLOAT);
+          done();
+        });
       }
-
-      async.series([seed, insert, find, assert]);
-
-      // db.Symbols.insert({
-      //   'symbol': TEST_SYMBOL
-      // });
-      // db.StockTicks.insert({
-      //   symbol: TEST_SYMBOL,
-      //   value: TEST_FLOAT
-      // }, function() {
-      //   db.StockTicks.find.bySymbol(TEST_SYMBOL, (err, rows) => {
-      //     if (err) throw err;
-      //     expect(rows[0].value).to.equal(TEST_FLOAT);
-      //     done();
-      //   });
-      // });
-
+      async.series([seed, insert, assert]);
     });
   });
 
   describe('StockTicks.cull()', function() {
     it('should delete StockTicks older than the given date', function(done) {
-      function seed(callback) {
-        db.Symbols.insert({
-          symbol: TEST_SYMBOL
-        }, callback);
-      }
-      function insert(callback) {
-        db.StockTicks.insert({
-          symbol: TEST_SYMBOL,
-          value: TEST_FLOAT
-        }, callback);
-      }
       function cull(callback) {
         const tomorrow = new Date();
         tomorrow.setDate(tomorrow.getDate() + 1);
@@ -143,7 +102,6 @@ describe('StockTicks', function() {
           done();
         });
       }
-
       async.series([seed, insert, cull, assert]);
     });
   });
