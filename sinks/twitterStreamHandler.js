@@ -5,24 +5,28 @@ var path = require('path');
 var Rx = require('rxjs/Rx');
 var cache = require('memory-cache');
 var keywords = makeKeywordMap(require('../config.json').keywords);
+var db = require('../database');
+var async = require('async');
 
 // Processes a Node Stream of tweets. Returns an Observable.
 exports.handle = function(stream, callback) {
   return makeStreamObservable(stream)
     .filter(isParsable)
+    .filter(isRelevant)
+    .map(cleanText)  // possibly change
     .groupBy(isCached)
-    .flatMap(cached => {
-      if (cached) return handleCachedTweets(group);
-      else return handleNewTweets(group);
+    .flatMap(group$ => {
+      if (group$.key) return handleCachedTweets(group$);
+      else return handleNewTweets(group$);
     });
 };
 
 // Returns an object that is used as a keyword map.
 function makeKeywordMap(keywords) {
-  let map = {};
+  let map = new Map();
   for (let keyword of keywords) {
     keyword = keyword.toLowerCase();
-    map[keyword] = true;
+    map.set(keyword, true);
   }
   return map;
 }
@@ -40,32 +44,100 @@ function makeStreamObservable(stream) {
 }
 
 // Processes tweets.  Returns an Observable of uncached tweets.
-function handleNewTweets(observable) {
-  let tweets = observable.filter(isRelevant);
-  tweets.subscribe(cacheTweet);
-  tweets.subscribe(tweet => console.log('RELEVANT: ', tweet.text));
-  return tweets;
+function handleNewTweets(uncached$) {
+  uncached$.subscribe(cacheTweet);
+  uncached$.subscribe(insertOrRetweet);
+  uncached$.subscribe(tweet => console.log('RELEVANT: ', JSON.stringify(tweet.text)));
+  return uncached$;
+}
+
+// 1. check if in db
+// 2. if it is, then call db.Tweets.retweet
+// 3. if not, put it in the db
+// 4. cache tweet
+function insertOrRetweet(tweet) {
+  const cleaned = cleanText(tweet);
+  async.waterfall([
+    function findIfTweetExists(callback) {
+      db.Tweets.find.byBody(cleaned.text, callback);
+    },
+    function retweetIfExists(results, callback) {
+      if (results.length > 0) {
+        db.Tweets.retweet(cleaned.text, callback);
+        callback(true);
+      } else {
+        callback();
+      }
+    },
+    // TODO: function findSymbol(results, callback) {},
+    function insertTweet(callback /*symbol*/) {
+      db.Tweets.insert({
+        symbol: null,
+        value: cleaned
+      });
+      callback();
+    }
+  ], function stop(error) {
+    if (error instanceof Error) throw error;
+  });
 }
 
 // Processes cached tweets. Returns an Observable of cached tweets.
-function handleCachedTweets(observable) {
-  let cached = observable;
-  cached.subscribe(tweet => console.log('CACHED: ', tweet.text));
-  return cached;
+function handleCachedTweets(cached$) {
+  cached$.subscribe(retweet);
+  cached$.subscribe(tweet => console.log('CACHED: ', tweet.text));
+  return cached$;
 }
 
-// Boolean. Determines if the tweet contains relevant keywords.
+function retweet(tweet) {
+  const cleaned = cleanText(tweet);
+  db.Tweets.retweet(cleaned, callback);
+}
+
+// Boolean. Determines if the tweet contains any relevant keywords.
 function isRelevant(tweet) {
-  let words = tweet.text.toLowerCase().split(' ');
+  const words = tweet.text.toLowerCase().split(' ');
+  if (words.length < 5) return false;
   for (let i = 0; i < words.length; i++) {
-    if (words[i] in keywords)
+    let word = trimHashtagsAndPunctuation(words[i]);
+    if (keywords.has(word)) {
+      console.log(words[i]);
       return true;
+    }
   }
   return false;
 }
 
+function trimHashtagsAndPunctuation(text) {
+  const tagsAndPunctuation = /#|[.!,\d]/g;
+  return text.replace(tagsAndPunctuation, "");
+}
+
+// Prepare tweet text for display.
+function cleanText(tweet) {
+  const tags = /[$@]\w+:*/g;
+  const urls = /(https?[a-zA-Z:/.]*)|/g;
+  const retweets = /RT/ig;
+  const multispaces = /\s\s+/g;
+  const trailingspaces = /^\s|\s$/g;
+  const garbage = /\d\w+/ig;
+  const unicode = /[^\\x00-\\x7F]/;
+
+  tweet.text = tweet.text
+    .replace(tags, "")
+    .replace(retweets, "")
+    .replace(urls, "")
+    .replace(garbage, "")
+    .replace(unicode, "")
+    .replace(multispaces, " ")
+    .replace(trailingspaces, "");
+
+  return tweet;
+}
+
 // Boolean. Determines if the tweet has been processed already.
 function isCached(tweet) {
+  let cleanedTweet = cleanText(tweet);
   let cached = cache.get(tweet.text);
   return cached ? true : false;
 }
@@ -79,10 +151,3 @@ function isParsable(tweet) {
 function cacheTweet(tweet) {
   cache.put(tweet.text,1, 10000);
 }
-
-function isStoredInDb(tweet) {
-
-}
-
-function updateDatabaseSymbol(cached) {}
-function mapToDatabaseSymbol(tweet)   {}

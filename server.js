@@ -18,11 +18,11 @@ server.listen(8080, () => {
 });
 
 // yahoo-finance demo
-var yf = require('./yahoo-finance');
-yf.stream('SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV', 'l90', (stream) => {
-  stream.on('data',   (data) => { console.log(data); });
-  stream.on('error',  () =>     { console.log('Error.'); });
-});
+// var yf = require('./yahoo-finance');
+// yf.stream('SPY,GOOG,AAPL,BAC,FCX,TVIX,GE,QQQ,XIV', 'l90', (stream) => {
+//   stream.on('data',   (data) => { console.log(data); });
+//   stream.on('error',  () =>     { console.log('Error.'); });
+// });
 
 
 // twitter stream demo
@@ -32,11 +32,18 @@ var twitterStreamHandler = require('./sinks/twitterStreamHandler');
 
 var twit = new twitter(config.twitter);
 
-twit.stream('statuses/filter', { track: 'justin' }, (stream) => {
+twit.stream('statuses/filter', { track: config.keywords.toString() }, (stream) => {
   stream.on("error", (err) => {
     console.log(err);
     throw err;
   });
   let output = twitterStreamHandler.handle(stream);
-  output.subscribe(() => console.log(':)'));
+  output.subscribe(
+    function onNext(x) {
+        console.log(':)');
+    },
+    function onError(err) {
+        console.log('ONERROR CALLED!!1!');
+    }
+  );
 });

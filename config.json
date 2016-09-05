@@ -4,6 +4,7 @@
     "consumer_secret": "zv3CbjhpmlRuW7c5nPg1QrpfaWQnsppW5Q1isgiB86zaMYWRKY",
     "access_token_key": "4316280673-LhQ2VwRi6Zo1ACwsaD2s2k0AzOQJyhQh3Lbg2KI",
     "access_token_secret": "r4hVYwd7jbO4SVvWHJyKoOekBGox0jepyjsANhWPL4DnL"
-  }, 
-   "keywords" : ["SIRI", "XIV", "AAPL", "BRCD", "MU", "QQQ", "FB", "CSCO", "MSFT", "INTC", "FTR", "AMAT", "ON", "TLT"]
+  },
+   "keywords" : ["AAPL", "BRCD", "NFLX", "QQQ", "CSCO", "MSFT", "INTC", "FTR", "TLT", "nasdaq", "stocks", "stockmarket", "nyse", "YHOO", "TSLA", "nasdaq-100", "commodities"],
+   "symbols" : []
 }

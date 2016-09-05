@@ -33,11 +33,11 @@ function createSymbolsTable(db) {
  * @param {callback} callback - called after db write, handles errors
  * @returns {object} a node-sqlite database for method chaining
  */
-function insertSymbol(params) {
+function insertSymbol(params, callback) {
   const symbol = params.symbol;
   const query = `
     INSERT INTO Symbols (symbol)
     VALUES ('${symbol}')
   `;
-  return db.run(query);
+  return db.run(query, callback);
 }

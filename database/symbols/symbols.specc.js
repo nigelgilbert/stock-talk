@@ -3,14 +3,19 @@
 var chai = require('chai');
 var expect = chai.expect;
 var sqlite3 = require('sqlite3');
+var async = require('async');
+var Symbols = require('./symbols.db.js');
 
 var db = new sqlite3.Database(':memory:');
-var Symbols = require('./symbols.db.js');
 
 describe('Symbols', function() {
 
   before(() => {
     db = Symbols.extends(db);
+  });
+
+  after(() => {
+    db.close();
   });
 
   describe('Symbols.extends()', function() {
@@ -32,16 +37,24 @@ describe('Symbols', function() {
   describe('Symbols.insert()', function() {
     it('Should insert a row into the Symbols table', function(done) {
       const test_symbol = 'AAPL';
-      db.Symbols.insert({ symbol: test_symbol });
       const query = `
         SELECT *
           FROM Symbols
          WHERE symbol='${test_symbol}'
       `;
-      db.get(query, (err, row) => {
-        expect(row.symbol).to.equal(test_symbol);
-        done();
-      });
+      function seed(callback) {
+        db.Symbols.insert({
+          symbol: test_symbol
+        }, callback);
+      }
+      function assert(callback) {
+        db.get(query, (err, row) => {
+          expect(row.symbol).to.equal(test_symbol);
+          done();
+        });
+      }
+
+      async.series([seed, assert]);
     });
   });
 });
